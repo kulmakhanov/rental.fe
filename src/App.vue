@@ -1,7 +1,7 @@
 <template>
   <v-app class="wrapper">
-    <Navbar />
-    <Footer />
+    <Navbar class="nav" />
+    <!-- <Footer class="footer" /> -->
   </v-app>
 </template>
 
@@ -45,6 +45,14 @@ body {
   perspective: 1000px;
   perspective-origin: 50% 50%;
 }
+
+/* .nav {
+  opacity: 90%;
+}
+
+.footer {
+  opacity: 90%;
+} */
 
 @keyframes scroll {
   100% {

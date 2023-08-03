@@ -1,7 +1,8 @@
 <template>
     <v-card
-      class="mx-auto"
+      class="card mx-auto"
       max-width="850"
+      :img="require('../../public/keyboard.webp')"
     >
       <v-container fluid class="mt-16">
         <v-card-title class="ml-10">Контакты</v-card-title>
@@ -12,44 +13,43 @@
                   <v-col cols="12" md="3">
                     <v-icon size="48px">mdi-map-marker</v-icon>
                   </v-col>  
-                  <v-col cols="12" md="9">
-                    <static-text>Adress:</static-text>
+                  <v-col cols="12" md="9" class="mt-1">
+                    <static-text>Адрес:</static-text>
                     <br/>
-                    <static-text>Adress</static-text>
+                    <static-text>мкрн. Самал 2</static-text>
                   </v-col>  
                 </v-row>
-                <v-row class="mt-5">
+                <v-row class="mt-10">
                   <v-col cols="12" md="3">
                     <v-icon size="48px">mdi-email-outline</v-icon>
                   </v-col>
-                  <v-col cols="12" md="9">
-                    <static-text>Email:</static-text>
+                  <v-col cols="12" md="9" class="pr-0 mt-1">
+                    <static-text>E-mail:</static-text>
                     <br/>
-                    <static-text>Email</static-text>
+                    <static-text>rentpro.kz@gmail.com</static-text>
                   </v-col>
                 </v-row>
-                <v-row class="mt-5">
+                <v-row class="mt-10">
                   <v-col cols="12" md="3">
                     <v-icon size="48px">mdi-phone</v-icon>
                   </v-col>
-                  <v-col cols="12" md="9">
-                    <static-text>PhoneNumber:</static-text>
+                  <v-col cols="12" md="9" class="mt-1">
+                    <static-text>Телефон:</static-text>
                     <br/>
-                    <static-text>PhoneNumber</static-text>
+                    <static-text>+7 (700) 086-51-51</static-text>
                   </v-col>
                 </v-row>
-                <v-row class="mt-5">
+                <v-row class="mt-10">
                   <v-col cols=12 md="3">
-                    <v-icon size="48px">mdi-instagram</v-icon>
+                    <a href="https://www.instagram.com/rentpro.kz/"  target="_blank">
+                    <v-icon size="48px" @click="">mdi-instagram</v-icon>
+                    </a>
                   </v-col>
-                  <v-col cols="12" md="9">
+                  <v-col cols="12" md="9" class="mt-1">
                     <static-text>Instagram:</static-text>
                     <br/>
-                    <static-text>Instagram</static-text>
+                    <static-text>@rentpro.kz</static-text>
                   </v-col>
-                </v-row>
-                <v-row class="mt-5">
-                  <static-text>MessageMessage</static-text>
                 </v-row>
               </v-col>
               <v-col cols="12" md="9" class="pr-0">
@@ -84,14 +84,24 @@
                 </div>
               </v-col>
             </v-row>
+            <v-row class="mt-5">
+                <v-icon size="48px">mdi-exclamation</v-icon>
+                <static-text class="mt-5">Просьба заранее уведомлять о приезде к нам в офис</static-text>
+            </v-row>
         </v-card-text>
+        <Footer class="footer" />
       </v-container>
+      
     </v-card>
   </template>
 
 <script>
+import Footer from '../components/Footer'
 export default {
   name: 'Contacts',
+  components: {
+    Footer,
+  },
   data() {
     return {
       mapUrl: "https://yandex.kz/map-widget/v1/?ll=76.916743%2C43.233219&mode=whatshere&utm_source=main_stripe_big&whatshere%5Bpoint%5D=76.915446%2C43.236787&whatshere%5Bzoom%5D=17&z=15.89" 
@@ -102,5 +112,7 @@ export default {
 </script>
 
 <style scoped>
-
+.card {
+  height: 100%;
+}
 </style>

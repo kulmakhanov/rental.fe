@@ -2,6 +2,7 @@
     <v-card
       class="mx-auto"
       max-width="850"
+      :img="require('../../public/keyboard.webp')"
     >
       <v-container fluid class="mt-16">
         <v-card-title>Trust us</v-card-title>
