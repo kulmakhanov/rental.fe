@@ -33,6 +33,7 @@
             <static-text>29 700 тг.</static-text>
           </v-col>
         </v-row>
+        <v-divider/>
       </v-card-text>
       <v-card-text>
         <h3>Долгосрочная аренда</h3>

@@ -1,7 +1,7 @@
 <template>
   <v-app class="wrapper">
     <Navbar class="nav" />
-    <!-- <Footer class="footer" /> -->
+    <Footer class="footer" />
   </v-app>
 </template>
 
@@ -24,12 +24,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap")
-  repeat scroll 0 0 rgba(0, 0, 0, 0);
-
-body {
-  background: #fff;
-}
 
 .wrapper {
   animation: scroll 100s linear infinite;
@@ -49,10 +43,10 @@ body {
 /* .nav {
   opacity: 90%;
 }
-
+*/
 .footer {
-  opacity: 90%;
-} */
+  opacity: 85%;
+}
 
 @keyframes scroll {
   100% {
@@ -67,10 +61,5 @@ body {
   }
 }
 
-@media (min-width: 670px) {
-  .title {
-    font-size: 5rem;
-  }
-}
 
 </style>

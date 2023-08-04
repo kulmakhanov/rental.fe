@@ -8,7 +8,7 @@
         <v-card-title class="ml-10">Контакты</v-card-title>
         <v-card-text class="pr-0">
             <v-row>
-              <v-col cols="12" md="3">
+              <v-col cols="3">
                 <v-row class="mt-5">
                   <v-col cols="12" md="3">
                     <v-icon size="48px">mdi-map-marker</v-icon>
@@ -52,7 +52,7 @@
                   </v-col>
                 </v-row>
               </v-col>
-              <v-col cols="12" md="9" class="pr-0">
+              <v-col cols="9" class="pr-0">
                 <div 
                   style="position:relative;
                     overflow:hidden;

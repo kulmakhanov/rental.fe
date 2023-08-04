@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-footer app>
+    <v-footer app class="footer">
         <v-col
           class="text-center"
           cols="12"
@@ -21,3 +21,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
