@@ -10,7 +10,7 @@
 
 </script>
 
-<style scoped>
+<!-- <style scoped>
 .header {
     color: #fff;
     justify-content: center;
@@ -24,5 +24,5 @@
     justify-content: center;
     margin-left: 150px;
 }
-</style>
+</style> -->
 

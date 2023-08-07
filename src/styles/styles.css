@@ -1,0 +1,52 @@
+
+/*
+.logo {
+    width: 68px;
+    height: 68px;
+}
+.card {
+  height: 100%;
+}
+*/
+
+/* --------Mobile--------------------- */
+@media (max-device-width: 480px) {
+  .map {
+    width:200px;
+    height: 200px;
+  }
+  .header {
+    color: #fff;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  .subheader {
+    justify-content: center;
+    margin-left: 150px;
+  }
+  .subheaderSec {
+    justify-content: center;
+    margin-left: 150px;
+  }
+}
+/* --------Tabs--------------------- */
+@media (min-device-width: 481px) and (max-device-width: 767px) {
+  .map {
+    width:500px;
+    height: 600px;
+  }
+}
+/* --------Tabs--------------------- */
+@media (min-device-width: 768px) and (max-device-width: 800px) {
+  .map {
+    width:300px;
+    height: 300px;
+  }
+}
+/* --------Laptops--------------------- */
+@media (min-device-width: 970px) {
+  .map {
+    width:560px;
+    height: 400px;
+  }
+}
