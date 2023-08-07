@@ -6,6 +6,7 @@
   >
     <v-container fluid class="mt-16">
       <v-card-title>Trust us</v-card-title>
+      <v-divider />
       <v-card-text align="center">
         <v-row dense>
           <v-col
@@ -15,12 +16,14 @@
           >
             <v-img
               :src="logo.src"
+              :contain="true"
+              size="90px"
               class="logo align-center my-5"
             >
             </v-img>
-            <span>{{ logo.title }}</span>
           </v-col>
-        </v-row>   
+        </v-row>  
+        <v-divider /> 
       </v-card-text>
     </v-container>
   </v-card>
@@ -33,64 +36,84 @@ export default {
     return {
       logos: [
         {
-          title: 'Chelsea FC',
-          src:"https://logodix.com/logo/1931301.png",
-          flex: 4
+          title: 'Mitsubishi',
+          src:"https://logodix.com/logo/9471.png",
+          flex: 3
         },
         {
-          title: 'FC Barcelona',
-          src: "https://logodix.com/logo/1931301.png",
-          flex: 4
+          title: 'Halyq Bank',
+          src: "https://cdn.freebiesupply.com/logos/large/2x/halyk-bank-logo-svg-vector.svg",
+          flex: 3
         },
         {
-          title: 'FC Bayern',
-          src: "https://logodix.com/logo/1931274.png",
-          flex: 4
+          title: 'KazakhAltyn',
+          src: "https://aaeservice.kz/wp-content/uploads/2020/12/ktt-test-black.svg",
+          flex: 3
         },
         {
-          title: 'Liverpool FC',
-          src: "https://logodix.com/logo/4586.png",
-          flex: 4
+          title: 'UNDP',
+          src: "https://logodix.com/logo/1062819.png",
+          flex: 3
         },
         {
-          title: 'Chelsea FC',
-          src: "https://logodix.com/logo/1931301.png",
-          flex: 4
+          title: 'Nestle',
+          src: "https://logodix.com/logo/47653.png",
+          flex: 3
         },
         {
-          title: 'Barcelona FC',
-          src: "https://logodix.com/logo/1931301.png",
-          flex: 4
+          title: 'PepsiCo',
+          src: "https://logodix.com/logo/60998.png",
+          flex: 3
         },
         {
-          title: 'Liverpool FC',
-          src: "https://logodix.com/logo/4586.png",
-          flex: 4
+          title: 'Tikkurila',
+          src: "https://toplogos.ru/images/logo-tikkurila.png",
+          flex: 3
         },
         {
           title: 'Bayern FC',
-          src: "https://logodix.com/logo/1931274.png",
-          flex: 4
+          src: "https://static.wixstatic.com/media/61f8ca_3a29112ce7bb4dd0b6fa838942dd0005~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_3a29112ce7bb4dd0b6fa838942dd0005~mv2.png",
+          flex: 3
         },
         {
           title: 'Barcelona FC',
-          src: "https://logodix.com/logo/1931301.png",
-          flex: 4
+          src: "https://static.wixstatic.com/media/61f8ca_33da99165bfa4169a4a888cdf5d9ad2f~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_33da99165bfa4169a4a888cdf5d9ad2f~mv2.png",
+          flex: 3
         },
         {
-          title: 'Liverpool FC',
-          src: "https://logodix.com/logo/4586.png",
-          flex: 4
+          title: 'Jysan',
+          src: "https://jusan.kz/file-server/filename?dir=logo&filename=logo-desktop2.png",
+          flex: 3
         },
         {
-          title: 'Barcelona FC',
-          src: "https://logodix.com/logo/1931301.png",
-          flex: 4
+          title: 'EY',
+          src: "https://logodix.com/logo/917113.png",
+          flex: 3
         },
         {
-          title: 'Chelsea FC',
-          src: "https://logodix.com/logo/1931301.png",
-          flex: 4
+          title: 'Efes ',
+          src: "https://static.wixstatic.com/media/61f8ca_d4f8591209b142068a272d3c7afddc7a~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_d4f8591209b142068a272d3c7afddc7a~mv2.png",
+          flex: 3
+        },
+        {
+          title: 'School ',
+          src: "https://static.wixstatic.com/media/61f8ca_b19c1886ad39425fa76e991d4b54177f~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_b19c1886ad39425fa76e991d4b54177f~mv2.png",
+          flex: 3
+        },
+        {
+          title: 'AAE ',
+          src: "https://static.wixstatic.com/media/61f8ca_1127d9184a6f489e80531c4d4e3813e8~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_1127d9184a6f489e80531c4d4e3813e8~mv2.png",
+          flex: 3
+        },
+        {
+          title: 'DAR ',
+          src: "https://static.wixstatic.com/media/61f8ca_4120e8d2ae334ac5a9c8d9fb3138f697~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_4120e8d2ae334ac5a9c8d9fb3138f697~mv2.png",
+          flex: 3
+        },
+        {
+          title: 'Atlas ',
+          src: "https://static.wixstatic.com/media/61f8ca_a1a95f9480124457bf4e9c02cd19a4d6~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_a1a95f9480124457bf4e9c02cd19a4d6~mv2.png",
+          flex: 3
         },
       ]
     }
