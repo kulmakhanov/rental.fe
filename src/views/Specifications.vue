@@ -13,7 +13,7 @@
                 <v-carousel-item v-for="(laptop, i) in laptops" :key="laptop">
                   <v-card
                     class="mx-auto"
-                    max-width="500"
+                    max-width="400"
                   >
                     <v-img
                       :src=laptop.img
@@ -33,15 +33,17 @@
                     <v-expand-transition>
                       <div v-show="show">
                         <v-row>
-                          <v-col cols="12" md="6">
-                            <v-card-text>
-                              I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing.
-                            </v-card-text>  
-                          </v-col>
-                          <v-col cols="12" md="6">
-                            <v-card-text>
-                              Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                            </v-card-text>
+                          <v-col cols="12" md="12">
+                            <v-card-text class="d-flex justify-center pt-0">
+                              <p>Диагональ экрана: {{ laptop.screen }} <br/>
+                              Процессор: {{ laptop.cpu }} <br/>
+                              Оперативная память: {{ laptop.ram }} <br/>
+                              Хранение данных: {{ laptop.hdd }} <br/>
+                              Видеокарта: {{ laptop.video }} <br/>
+                              ОС: {{ laptop.ops }} <br/>
+                              Размеры, вес: {{ laptop.weight }} <br/>
+                              </p>
+                            </v-card-text>   
                           </v-col>
                         </v-row>
                       </div>
@@ -70,18 +72,46 @@ export default {
         {
           title: "Dell Ultrabook",
           img: require("../../public/dell_ultrabook.png"),
+          screen: "12.5”, 16:9, 1366 x 768",
+          cpu: "Intel Core i5-4200U",
+          ram: "4Gb",
+          hdd: "SSD 120Gb",
+          video: "Intel HD Graphics 4400",
+          ops: "Windows 8 Pro",
+          weight: "20x311x211мм, 1.34 кг",
         },
         {
           title: "Dell Latitude",
           img: require("../../public/dell_latitude.png"),
+          screen: "14”, 16:9, 1600 x 900",
+          cpu: "Intel Core i5-4200M",
+          ram: "4Gb",
+          hdd: "SSD 120Gb",
+          video: "Intel HD Graphics 4600​",
+          ops: "Windows 8 Pro",
+          weight: "31x338x232мм, 2.1 кг",
         },
         {
           title: "Lenovo ThinkPad 12'''",
           img: require("../../public/lenovo_think.png"),
+          screen: "12.5”, 16:9, 1366 x 768",
+          cpu: "Intel Core i5-4300U",
+          ram: "4Gb",
+          hdd: "SSD 120Gb",
+          video: "Intel HD Graphics 4400​",
+          ops: "Windows 8 Pro",
+          weight: "20x305x208мм, 1.36 кг",
         },
         {
           title: "Lenovo ThinkPad 14''",
           img: require("../../public/lenovo_thinkpad.png"),
+          screen: "14”, 16:9, 1600 x 900",
+          cpu: "Intel Core i5-5300U",
+          ram: "4Gb",
+          hdd: "SSD 120Gb",
+          video: "Intel HD Graphics 5500​",
+          ops: "Windows 8 Pro",
+          weight: "21x339x231мм, 1.8 кг",
         },
       ],
     }
