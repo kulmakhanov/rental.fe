@@ -1,18 +1,19 @@
 <template>
     <v-card
-      class="mx-auto"
+      class="card mx-auto"
       max-width="850"
       :img="require('../../public/keyboard.webp')"
     >
       <v-container fluid class="mt-16">
         <v-card-title>Характеристики ноутбуков</v-card-title>
+        <v-divider />
         <v-card-text>
           <v-row>
             <v-col cols="12" md="12">
-              <v-carousel v-model="model">
+              <v-carousel v-model="model" hide-delimiters>
                 <v-carousel-item v-for="(laptop, i) in laptops" :key="laptop">
                   <v-card
-                    class="mx-auto"
+                    class="mx-auto mt-10"
                     max-width="400"
                   >
                     <v-img
@@ -118,3 +119,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.card {
+  height: 720px;
+}
+</style>

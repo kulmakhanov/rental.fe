@@ -6,6 +6,7 @@
   >
     <v-container fluid class="mt-16">
       <v-card-title>Услуги</v-card-title>
+      <v-divider />
       <v-card-text>
         <h3>Аренда ноутбука "Бизнес класса"</h3>
         <h4>Ноутбуки бизнес класса справятся с любыми задачами на отлично</h4>
@@ -40,6 +41,7 @@
         <p>Вам требуется техника на несколько недель или даже пару месяцев?<br/>
             В этом случае Вы можете рассчитывать на скидки до 80% от указанных на сайте.
         </p>
+        <v-divider />
       </v-card-text>
     </v-container>
     <Footer class="footer" />
@@ -53,3 +55,9 @@ export default {
   components: { Footer }
 }
 </script>
+
+<style scoped>
+.card {
+  height: 720px;
+}
+</style>

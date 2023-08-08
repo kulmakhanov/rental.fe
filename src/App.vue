@@ -1,19 +1,16 @@
 <template>
   <v-app class="wrapper">
     <Navbar class="nav" />
-    <Footer class="footer" />
   </v-app>
 </template>
 
 <script>
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Footer,
   },
   data() {
     return {
@@ -24,7 +21,6 @@ export default {
 </script>
 
 <style scoped>
-
 .wrapper {
   animation: scroll 100s linear infinite;
   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
@@ -38,14 +34,6 @@ export default {
   align-items: center;
   perspective: 1000px;
   perspective-origin: 50% 50%;
-}
-
-/* .nav {
-  opacity: 90%;
-}
-*/
-.footer {
-  opacity: 85%;
 }
 
 @keyframes scroll {
