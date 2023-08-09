@@ -2,7 +2,7 @@
   <v-card
     class="card mx-auto"
     max-width="850"
-    :img="require('../../public/keyboard.webp')"
+    :img="require('../../public/background_main.webp')"
   >
     <v-container fluid class="mt-16">
       <v-card-title>Trust us</v-card-title>
@@ -130,24 +130,24 @@ export default {
           title: 'School ',
           src: "https://static.wixstatic.com/media/61f8ca_b19c1886ad39425fa76e991d4b54177f~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_b19c1886ad39425fa76e991d4b54177f~mv2.png",
           flex: 4,
-          flexL: 3
+          flexL: 4
         },
         {
           title: 'AAE ',
           src: "https://static.wixstatic.com/media/61f8ca_1127d9184a6f489e80531c4d4e3813e8~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_1127d9184a6f489e80531c4d4e3813e8~mv2.png",
           flex: 4,
-          flexL: 3
+          flexL: 4
         },
         {
           title: 'DAR ',
           src: "https://static.wixstatic.com/media/61f8ca_4120e8d2ae334ac5a9c8d9fb3138f697~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_4120e8d2ae334ac5a9c8d9fb3138f697~mv2.png",
           flex: 4,
-          flexL: 3
+          flexL: 4
         },
-        {
-          title: 'Atlas ',
-          src: "https://static.wixstatic.com/media/61f8ca_a1a95f9480124457bf4e9c02cd19a4d6~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_a1a95f9480124457bf4e9c02cd19a4d6~mv2.png",
-        },
+        // {
+        //   title: 'Atlas ',
+        //   src: "https://static.wixstatic.com/media/61f8ca_a1a95f9480124457bf4e9c02cd19a4d6~mv2.png/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01/61f8ca_a1a95f9480124457bf4e9c02cd19a4d6~mv2.png",
+        // },
       ]
     }
   },

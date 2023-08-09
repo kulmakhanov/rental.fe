@@ -1,5 +1,5 @@
 <template>
-  <v-app class="wrapper">
+  <v-app  class="wrapper">
     <Navbar class="nav" />
   </v-app>
 </template>
@@ -22,6 +22,9 @@ export default {
 
 <style scoped>
 .wrapper {
+  background: url("../public/background_main.webp") ;
+}
+/* .wrapper {
   animation: scroll 100s linear infinite;
   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
     #111111;
@@ -43,11 +46,7 @@ export default {
 }
 
 /* Fallback if the operatring system prefers reduced motion*/
-@media (prefers-reduced-motion) {
-  .wrapper {
-    animation: scroll 800s linear infinite;
-  }
-}
+
 
 
 </style>

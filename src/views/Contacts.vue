@@ -31,11 +31,11 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col cols="12" sm="12">
+          <v-col cols="12" sm="12" class="pb-0">
             <YandexMap width="550" height="300"/>
           </v-col>
         </v-row>
-        <v-row class="mt-2">
+        <v-row class="mt-0">
           <v-icon size="38px">mdi-exclamation</v-icon>
           <p class="mt-4">Просьба заранее уведомлять о приезде к нам</p>
         </v-row>
@@ -69,7 +69,7 @@
         <v-divider class="mt-10" />
         <v-row class="mt-5">
           <v-icon size="48px">mdi-exclamation</v-icon>
-          <static-text class="mt-5">Просьба заранее уведомлять о приезде к нам в офис</static-text>
+          <p class="mt-5">Просьба заранее уведомлять о приезде к нам в офис</p>
         </v-row>
       </v-card-text>
       <Footer class="footer" />

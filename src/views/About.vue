@@ -59,9 +59,9 @@ export default {
   components: { Footer },
   data: () => ({
     cards: [
-      { title: 'Выбор подходящего ноутбука', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
-      { title: 'Установка необходимого ПО', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 12 },
-      { title: 'Доставка или самовывоз', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 12 },
+      { title: 'Выбор подходящего ноутбука', src: require("../../public/laptop_res1.webp"), flex: 12 },
+      { title: 'Установка необходимого ПО', src: require("../../public/laptop_res2.jpg"), flex: 12 },
+      { title: 'Доставка или самовывоз', src: require("../../public/laptop_res3.avif"), flex: 12 },
     ],
   }),
 }

@@ -1,5 +1,5 @@
 <template>
-  <container>
+  <v-container>
     <div
       class="d-flex justify-start"
       style="
@@ -35,7 +35,7 @@
       >
       </iframe>
     </div>
-  </container>
+  </v-container>
 </template>
 
 <script>
