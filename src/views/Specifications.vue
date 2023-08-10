@@ -1,64 +1,159 @@
 <template>
-    <v-card
-      class="card mx-auto"
-      max-width="850"
-      :img="require('../../public/keyboard.webp')"
-    >
-      <v-container fluid class="mt-16">
-        <v-card-title>Характеристики ноутбуков</v-card-title>
-        <v-divider />
-        <v-card-text>
-          <v-row>
-            <v-col cols="12" md="12">
-              <v-carousel v-model="model" hide-delimiters>
-                <v-carousel-item v-for="(laptop, i) in laptops" :key="laptop">
-                  <v-card
-                    class="mx-auto mt-10"
-                    max-width="400"
+  <v-card
+    class="card mx-auto"
+    max-width="850"
+    :img="require('../../public/keyboard.webp')"
+  >
+    <v-container fluid class="hidden-sm-and-up">
+      <v-card-title>Характеристики ноутбуков</v-card-title>
+      <v-divider />
+      <v-row>
+        <v-col cols="12" md="12" class="py-0">
+          <v-carousel v-model="model" hide-delimiters>
+            <v-carousel-item v-for="(laptop, i) in laptops" :key="laptop">
+              <v-card
+                class="mx-auto"
+                max-width="400"
+              >
+                <v-img
+                  :src=laptop.img
+                  :contain="true"
+                  height="250px"
+                >
+                </v-img>
+                <v-card-title class="d-flex justify-center py-0 ml-5">
+                  {{ laptop.title }}
+                  <v-btn
+                    icon
+                    @click="show = !show"
                   >
-                    <v-img
-                      :src=laptop.img
-                      :contain="true"
-                      height="250px"
-                    ></v-img>
-                    <v-card-title class="d-flex justify-center py-0 ml-5">
-                      {{ laptop.title }}
-                      <v-btn
-                        icon
-                        @click="show = !show"
-                      >
-                        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                      </v-btn>
-                    </v-card-title>
-                    <v-divider class="pb-1"/>
-                    <v-expand-transition>
-                      <div v-show="show">
-                        <v-row>
-                          <v-col cols="12" md="12">
-                            <v-card-text class="d-flex justify-center pt-0">
-                              <p>Диагональ экрана: {{ laptop.screen }} <br/>
-                              Процессор: {{ laptop.cpu }} <br/>
-                              Оперативная память: {{ laptop.ram }} <br/>
-                              Хранение данных: {{ laptop.hdd }} <br/>
-                              Видеокарта: {{ laptop.video }} <br/>
-                              ОС: {{ laptop.ops }} <br/>
-                              Размеры, вес: {{ laptop.weight }} <br/>
-                              </p>
-                            </v-card-text>   
-                          </v-col>
-                        </v-row>
-                      </div>
-                    </v-expand-transition>
-                  </v-card>
-                </v-carousel-item>
-              </v-carousel>
-            </v-col>
-          </v-row>
-        </v-card-text>
-      </v-container>
-      <Footer class="footer" />
-    </v-card>
-  </template>
+                    <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-title>
+                <v-divider class="pb-1"/>
+                <v-expand-transition>
+                  <div v-show="show">
+                    <v-row>
+                      <v-col cols="12" md="12">
+                        <v-simple-table class="price-table-small" dense>
+                          <tbody>
+                            <tr>
+                              <td class="text-left font-weight-bold">{{ "Диагональ экрана" }}</td>
+                              <td class="text-left">{{ laptop.screen }}</td>
+                            </tr>
+                            <tr>
+                              <td class="text-left font-weight-bold">{{ "Процессор" }}</td>
+                              <td class="text-left">{{ laptop.cpu }}</td>
+                            </tr>
+                            <tr>
+                              <td class="text-left font-weight-bold">{{ "Оперативная память" }}</td>
+                              <td class="text-left">{{ laptop.ram }}</td>
+                            </tr>
+                            <tr>
+                              <td class="text-left font-weight-bold">{{ "Хранение данных" }}</td>
+                              <td class="text-left">{{ laptop.hdd }}</td>
+                            </tr>
+                            <tr>
+                              <td class="text-left font-weight-bold">{{ "Видеокарта" }}</td>
+                              <td class="text-left">{{ laptop.video }}</td>
+                            </tr>
+                            <tr>
+                              <td class="text-left font-weight-bold">{{ "ОС" }}</td>
+                              <td class="text-left">{{ laptop.ops }}</td>
+                            </tr>
+                            <tr>
+                              <td class="text-left font-weight-bold">{{ "Размеры, вес" }}</td>
+                              <td class="text-left">{{ laptop.weight }}</td>
+                            </tr>
+                          </tbody>
+                        </v-simple-table>
+                      </v-col>
+                    </v-row>
+                  </div>
+                </v-expand-transition>
+              </v-card>
+            </v-carousel-item>
+          </v-carousel>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container fluid class="hidden-xs-only mt-16">
+      <v-card-title>Характеристики ноутбуков</v-card-title>
+      <v-divider />
+      <v-card-text>
+        <v-row>
+          <v-col cols="12" md="12">
+            <v-carousel v-model="model" hide-delimiters>
+              <v-carousel-item v-for="(laptop, i) in laptops" :key="laptop">
+                <v-card
+                  class="mx-auto mt-10"
+                  max-width="400"
+                >
+                  <v-img
+                    :src=laptop.img
+                    :contain="true"
+                    height="250px"
+                  ></v-img>
+                  <v-card-title class="d-flex justify-center py-0 ml-5">
+                    {{ laptop.title }}
+                    <v-btn
+                      icon
+                      @click="show = !show"
+                    >
+                      <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                    </v-btn>
+                  </v-card-title>
+                  <v-divider class="pb-1"/>
+                  <v-expand-transition>
+                    <div v-show="show">
+                      <v-row>
+                        <v-col cols="12" md="12">
+                          <v-simple-table class="price-table-small" dense>
+                            <tbody>
+                              <tr>
+                                <td class="text-left">{{ "Диагональ экрана" }}</td>
+                                <td class="text-left">{{ laptop.screen }}</td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">{{ "Процессор" }}</td>
+                                <td class="text-left">{{ laptop.cpu }}</td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">{{ "Оперативная память" }}</td>
+                                <td class="text-left">{{ laptop.ram }}</td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">{{ "Хранение данных" }}</td>
+                                <td class="text-left">{{ laptop.hdd }}</td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">{{ "Видеокарта" }}</td>
+                                <td class="text-left">{{ laptop.video }}</td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">{{ "ОС" }}</td>
+                                <td class="text-left">{{ laptop.ops }}</td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">{{ "Размеры, вес" }}</td>
+                                <td class="text-left">{{ laptop.weight }}</td>
+                              </tr>
+                            </tbody>
+                          </v-simple-table>
+                        </v-col>
+                      </v-row>
+                    </div>
+                  </v-expand-transition>
+                </v-card>
+              </v-carousel-item>
+            </v-carousel>
+          </v-col>
+        </v-row>
+      </v-card-text>
+    </v-container>
+    <Footer class="footer" />
+  </v-card>
+</template>
 
 <script>
 import Footer from '../components/Footer' 
