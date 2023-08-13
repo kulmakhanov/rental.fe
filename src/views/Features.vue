@@ -1,8 +1,7 @@
 <template>
   <v-card
-    class="card mx-auto"
+    class="main-card mx-auto"
     max-width="850"
-    :img="require('../../public/keyboard.webp')"
   >
     <v-container fluid class="hidden-sm-and-up">
       <v-card-title>Нам доверяют</v-card-title>

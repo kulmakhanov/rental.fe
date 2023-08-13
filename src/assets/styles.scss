@@ -1,21 +1,62 @@
-.header {
-  color: #fff;
+.main-header {
   justify-content: center;
-  margin-top: 200px;
+  align-content: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: left;
 }
-.subheader {
+.main-header:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+.main-subheader {
   justify-content: center;
   margin-left: 150px;
+  font-size: 1.2em;
+  line-height: 150%;
+  text-align: center;
+  color: MintCream;
+  letter-spacing: .5px;
 }
-.subheaderSec {
+.main-subheaderSec {
   justify-content: center;
   margin-left: 150px;
+  font-size: 1.2em;
+  line-height: 150%;
+  text-align: center;
+  color: MintCream;
+  letter-spacing: .5px;
 }
 .footer {
   opacity: 85%;
 }
-.nav {
-  opacity: 92%;
+.large-nav  {
+  opacity: 85%;
+}
+.small-nav {
+  opacity: 85%;
+}
+.main-container {
+  height: 100vh;
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+
+}
+.main-card {
+  opacity: 77%;
+  height: 100vh;
+}
+
+.laptop-card {
+  opacity: 100% !important;
 }
 
 /*
@@ -29,30 +70,30 @@
 */
 
 /* --------Mobile--------------------- */
-@media (max-device-width: 480px) {
-  .map {
-    width:200px;
-    height: 200px;
-  }
-}
-/* --------Tabs--------------------- */
-@media (min-device-width: 481px) and (max-device-width: 767px) {
-  .map {
-    width:500px;
-    height: 600px;
-  }
-}
-/* --------Tabs--------------------- */
-@media (min-device-width: 768px) and (max-device-width: 800px) {
-  .map {
-    width:300px;
-    height: 300px;
-  }
-}
-/* --------Laptops--------------------- */
-@media (min-device-width: 970px) {
-  .map {
-    width:560px;
-    height: 400px;
-  }
-}
+// @media (max-device-width: 480px) {
+//   .map {
+//     width:200px;
+//     height: 200px;
+//   }
+// }
+// /* --------Tabs--------------------- */
+// @media (min-device-width: 481px) and (max-device-width: 767px) {
+//   .map {
+//     width:500px;
+//     height: 600px;
+//   }
+// }
+// /* --------Tabs--------------------- */
+// @media (min-device-width: 768px) and (max-device-width: 800px) {
+//   .map {
+//     width:300px;
+//     height: 300px;
+//   }
+// }
+// /* --------Laptops--------------------- */
+// @media (min-device-width: 970px) {
+//   .map {
+//     width:560px;
+//     height: 400px;
+//   }
+// }

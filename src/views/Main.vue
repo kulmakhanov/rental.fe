@@ -1,9 +1,9 @@
 <template>
-  <v-container fluid class="mt-16">
+  <v-container fluid class=" d-flex">
     <div class="mx-auto">
-      <h1 class="header d-flex">Test header Almaty</h1>
-      <h4 class="subheader d-flex">Phone number</h4>
-      <h4 class="subheaderSec d-flex">Email</h4>
+      <h1 class="main-header d-flex">Аренда ноутбуков <br>в Алматы</h1>
+      <h4 class="main-subheader d-flex">+7 (700) 086-51-51</h4>
+      <h4 class="main-subheaderSec d-flex">rentpro.kz@gmail.com</h4>
     </div>
     <Footer class="footer" />
   </v-container>

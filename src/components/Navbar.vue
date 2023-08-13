@@ -15,7 +15,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app>
-      <span class="hidden-sm-and-up">
+      <span class="small-nav hidden-sm-and-up">
         <v-app-bar-nav-icon @click="sidebar = !sidebar">
         </v-app-bar-nav-icon>
       </span>
@@ -25,7 +25,7 @@
         </router-link>
       </v-toolbar-title>
       <v-spacer/>
-      <v-toolbar-items class="hidden-xs-only">
+      <v-toolbar-items class="large-nav hidden-xs-only">
         <v-btn
           plain
           v-for="item in menuItems"
@@ -37,7 +37,7 @@
         </v-btn>
       </v-toolbar-items>
     </v-app-bar>
-    <v-main>
+    <v-main class="main-container">
       <router-view></router-view>
     </v-main>
   </div>

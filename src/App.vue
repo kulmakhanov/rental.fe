@@ -1,11 +1,12 @@
 <template>
-  <v-app  class="wrapper">
+  <v-app  style="background-image: url('../public/main_background.avif');">
     <Navbar class="nav" />
   </v-app>
 </template>
 
 <script>
 import Navbar from './components/Navbar'
+import "./assets/styles.scss"
 
 export default {
   name: 'App',
@@ -14,17 +15,8 @@ export default {
   },
   data() {
     return {
-
+      backGroundSrc: require('../public/main_background.avif')
     }
   }, 
 };
 </script>
-
-<style scoped>
-.wrapper {
-  background-color: blue;
-  /* background-image: url("../public/main_background.avif") ; */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-</style>
