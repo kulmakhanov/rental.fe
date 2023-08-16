@@ -1,5 +1,5 @@
 <template>
-  <v-app  style="background-image: url('../public/main_background.avif');">
+  <v-app  style="background-image: backGroundSrc;">
     <Navbar class="nav" />
   </v-app>
 </template>

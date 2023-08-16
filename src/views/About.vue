@@ -27,7 +27,7 @@
         </v-row>
       </v-card-text>
     </v-container>
-    <v-container fluid class="hidden-xs-only mt-16" >
+    <v-container fluid class="hidden-xs-only mt-2" >
       <v-card-title>Преимущества</v-card-title>
       <v-divider />
       <v-card-text class="pa-0">
@@ -51,15 +51,12 @@
         </v-row>
       </v-card-text>
     </v-container>
-    <Footer class="footer" />
   </v-card>
 </template>
   
 <script>
-import Footer from '../components/Footer'
 export default {
   name: 'About',
-  components: { Footer },
   data: () => ({
     cards: [
       { title: 'Выбор подходящего ноутбука', src: require("../../public/laptop_res1.webp"), flex: 12 },
@@ -69,12 +66,3 @@ export default {
   }),
 }
 </script>
-
-<style scoped>
-.card {
-  height: 720px;
-}
-.subcard {
-  box-shadow: 10px 5px 5px red;
-}
-</style>

@@ -39,7 +39,7 @@
         <p class="mt-4">Просьба заранее уведомлять о приезде</p>
       </v-row>
     </v-container>
-    <v-container fluid class="hidden-xs-only mt-16">
+    <v-container fluid class="hidden-xs-only mt-2">
       <v-row>
         <v-col cols="12" md="4">
           <v-row>
@@ -71,17 +71,14 @@
         <p class="mt-5">Просьба заранее уведомлять о приезде к нам в офис</p>
       </v-row>
     </v-container>
-    <Footer class="footer" />
   </v-card>
 </template>
 
 <script>
-import Footer from '../components/Footer'
-import YandexMap from '@/components/YandexMap';
+import YandexMap from '@/components/YandexMap'
 export default {
   name: 'Contacts',
   components: {
-    Footer,
     YandexMap,
   },
   data() {
@@ -94,9 +91,7 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  height: 720px;
-}
+
 .map {
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15)
 }

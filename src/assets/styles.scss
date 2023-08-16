@@ -1,3 +1,11 @@
+.main {
+  position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 200px 0;
+}
+
+
 .main-header {
   justify-content: center;
   align-content: center;
@@ -35,29 +43,27 @@
   letter-spacing: .5px;
 }
 .footer {
-  opacity: 85%;
+  
 }
 .large-nav  {
-  opacity: 85%;
+  
 }
 .small-nav {
-  opacity: 85%;
+  
 }
 .main-container {
-  height: 100vh;
-  background-color: #111;
+  height: 100%;
+  background-image: url("../../public/main_back.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  // overflow: hidden;
 
 }
 .main-card {
-  opacity: 77%;
-  height: 100vh;
-}
+  height: 100vh;}
 
 .laptop-card {
-  opacity: 100% !important;
+
 }
 
 /*

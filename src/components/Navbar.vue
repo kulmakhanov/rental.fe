@@ -22,6 +22,7 @@
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer;">
           {{ appTitle }}
+          <v-icon color="black" class="mt-1" small>mdi-laptop</v-icon>
         </router-link>
       </v-toolbar-title>
       <v-spacer/>
@@ -39,16 +40,19 @@
     </v-app-bar>
     <v-main class="main-container">
       <router-view></router-view>
+      <Footer class="footer" />
     </v-main>
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer'
 export default {
   name: 'Navbar',
+  components: { Footer },
   data() {
     return {
-      appTitle: "VueApp",
+      appTitle: "HireTech",
       sidebar: false,
       menuItems: [
         { title: "About", path: "/about", icon: "mdi-information-box-outline" },

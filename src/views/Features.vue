@@ -24,7 +24,7 @@
         </v-row> 
       </v-card-text>
     </v-container>
-    <v-container fluid class="hidden-xs-only mt-16">
+    <v-container fluid class="hidden-xs-only mt-2">
       <v-card-title>Нам доверяют</v-card-title>
       <v-card-text class="pa-0" align="center">  
         <v-row dense>
@@ -46,15 +46,12 @@
         </v-row>   
       </v-card-text>
     </v-container>
-    <Footer class="footer" />
   </v-card>
 </template>
   
 <script>
-import Footer from '../components/Footer' 
 export default {
   name: 'Features',
-  components: { Footer },
   data() {
     return {
       logos: [
@@ -223,9 +220,6 @@ export default {
   border: 1px solid #ccc; /* Пример пользовательских стилей границы */
   padding: 1px; /* Добавьте отступ для лучшего визуального разделения */
   height: 150px;
-}
-.card {
-  height: 720px;
 }
 /* .logo-sm {
     width: 65px;

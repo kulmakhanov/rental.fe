@@ -76,7 +76,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid class="hidden-xs-only mt-16">
+    <v-container fluid class="hidden-xs-only mt-2">
       <v-card-title>Характеристики ноутбуков</v-card-title>
       <v-divider />
         <v-row>
@@ -148,15 +148,12 @@
           </v-col>
         </v-row>
     </v-container>
-    <Footer class="footer" />
   </v-card>
 </template>
 
 <script>
-import Footer from '../components/Footer' 
 export default {
   name: 'Specifications',
-  components: { Footer },
   data() {
     return {
       model: 0,
