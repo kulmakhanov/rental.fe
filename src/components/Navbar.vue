@@ -56,7 +56,7 @@ export default {
       sidebar: false,
       menuItems: [
         { title: "About", path: "/about", icon: "mdi-information-box-outline" },
-        { title: "Features", path: "/features", icon: "mdi-star-circle-outline" },
+        // { title: "Features", path: "/features", icon: "mdi-star-circle-outline" },
         { title: "Service", path: "/service", icon: "mdi-account-group-outline" },
         { title: "Contacts", path: "/contacts", icon: "mdi-card-account-phone-outline" },
         { title: "Specifications", path: "/specifications", icon: "mdi-cogs" },
