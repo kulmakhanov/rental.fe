@@ -1,7 +1,7 @@
 <template>
   <v-card
     class="main-card mx-auto"
-    max-width="850"
+    max-width="780"
   >
     <v-container fluid class="hidden-sm-and-up">
       <v-card-title>Услуги</v-card-title>

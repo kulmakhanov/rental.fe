@@ -3,6 +3,7 @@
     <v-navigation-drawer v-model="sidebar" app>
       <v-list>
         <v-list-item
+          class="nav-mobile-list"
           v-for="item in menuItems"
           :key="item.title"
           :to="item.path"
@@ -20,14 +21,15 @@
         </v-app-bar-nav-icon>
       </span>
       <v-toolbar-title>
-        <router-link to="/" tag="span" style="cursor: pointer;">
+        <router-link to="/" tag="span" class="main-button">
           {{ appTitle }}
-          <v-icon color="black" class="mt-1" small>mdi-laptop</v-icon>
+          <!-- <v-icon color="black" class="mt-1" small>mdi-laptop</v-icon> -->
         </router-link>
       </v-toolbar-title>
       <v-spacer/>
       <v-toolbar-items class="large-nav hidden-xs-only">
         <v-btn
+          class="menu-buttons"
           plain
           v-for="item in menuItems"
           :key="item.title"
