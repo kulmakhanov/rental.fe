@@ -81,7 +81,7 @@
       <v-divider />
         <v-row>
           <v-col cols="12" md="12" class="py-0">
-            <v-carousel v-model="model" hide-delimiters>
+            <v-carousel v-model="model" hide-delimiters class="mt-3">
               <v-carousel-item v-for="laptop in laptops" :key="laptop">
                 <v-card
                   class="mx-auto mt-4"

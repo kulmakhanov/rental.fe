@@ -14,7 +14,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar app>
+    <v-app-bar app class="app-bar">
       <span class="small-nav hidden-sm-and-up">
         <v-app-bar-nav-icon @click="sidebar = !sidebar">
         </v-app-bar-nav-icon>
@@ -56,7 +56,6 @@ export default {
       sidebar: false,
       menuItems: [
         { title: "About", path: "/about", icon: "mdi-information-box-outline" },
-        // { title: "Features", path: "/features", icon: "mdi-star-circle-outline" },
         { title: "Service", path: "/service", icon: "mdi-account-group-outline" },
         { title: "Contacts", path: "/contacts", icon: "mdi-card-account-phone-outline" },
         { title: "Specifications", path: "/specifications", icon: "mdi-cogs" },
@@ -65,3 +64,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+/* .app-bar {
+  background-color: #ff5722;
+  color: #ffffff;
+} */
+</style>
