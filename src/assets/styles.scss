@@ -1,7 +1,6 @@
 
 .menu-buttons {
   font-family: 'Gambetta', serif;
-  
   text-transform: uppercase;
 }
 
@@ -49,10 +48,7 @@
   background-position: center;
   // overflow: hidden;
 }
-.main-card {
-  display: flex;
-  flex-direction: column;
-}
+
 /*
 .logo {
     width: 68px;
@@ -80,21 +76,20 @@
     margin-bottom: 0.8rem;
     color: MintCream;
     outline: none;
-    text-align: left;
+    text-align: right;
   }
   .main-header:hover {
     font-variation-settings: "wght" 582; 
     letter-spacing: 1px;
   }
   .main-subheader {
-    justify-content: center;
+    justify-content: end;
     letter-spacing: -1px;
     transition: 700ms ease;
-    margin-left: 70px;
+    // margin-left: 70px;
     font-variation-settings: "wght" 311;
     font-size: 1.2em;
     line-height: 150%;
-    text-align: center;
     color: MintCream;
     letter-spacing: .5px;
   }
@@ -103,7 +98,7 @@
     letter-spacing: 1px;
   }
   .main-subheaderSec {
-    justify-content: center;
+    justify-content: end;
     margin-left: 70px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -111,13 +106,17 @@
     letter-spacing: -1px;
     font-size: 1.2em;
     line-height: 150%;
-    text-align: center;
     color: MintCream;
     letter-spacing: .5px;
   }
   .main-subheaderSec:hover {
     font-variation-settings: "wght" 582; 
     letter-spacing: 1px;
+  }
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
   }
 
 }
@@ -147,13 +146,13 @@
     letter-spacing: 1px;
   }
   .main-subheader {
+    justify-content: end;
     letter-spacing: -1px;
     transition: 700ms ease;
     margin-left: 270px;
     font-variation-settings: "wght" 311;
     font-size: 1.2em;
     line-height: 150%;
-    text-align: end;
     color: MintCream;
     letter-spacing: .5px;
   }
@@ -162,6 +161,7 @@
     letter-spacing: 1px;
   }
   .main-subheaderSec {
+    justify-content: end;
     margin-left: 270px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -169,7 +169,6 @@
     letter-spacing: -1px;
     font-size: 1.2em;
     line-height: 150%;
-    text-align: right;
     color: MintCream;
     letter-spacing: .5px;
   }
@@ -204,13 +203,13 @@
     letter-spacing: 1px;
   }
   .main-subheader {
+    justify-content: end;
     letter-spacing: -1px;
     transition: 700ms ease;
     margin-left: 270px;
     font-variation-settings: "wght" 311;
     font-size: 1.2em;
     line-height: 150%;
-    text-align: end;
     color: MintCream;
     letter-spacing: .5px;
   }
@@ -219,6 +218,7 @@
     letter-spacing: 1px;
   }
   .main-subheaderSec {
+    justify-content: end;
     margin-left: 270px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -226,7 +226,6 @@
     letter-spacing: -1px;
     font-size: 1.2em;
     line-height: 150%;
-    text-align: right;
     color: MintCream;
     letter-spacing: .5px;
   }
@@ -263,6 +262,7 @@
     letter-spacing: 1px;
   }
   .main-subheader {
+    justify-content: end;
     letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -276,6 +276,7 @@
     letter-spacing: 1px;
   }
   .main-subheaderSec {
+    justify-content: end;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
     outline: none;

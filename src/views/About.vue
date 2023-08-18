@@ -1,7 +1,7 @@
 <template class="about-page">
   <v-card
     class="main-card mx-auto"
-    max-width="780"
+
   >
     <v-container fluid class="hidden-sm-and-up">
       <v-card-title>Преимущества</v-card-title>
