@@ -1,10 +1,9 @@
 <template class="about-page">
   <v-card
     class="main-card mx-auto"
-
   >
     <v-container fluid class="hidden-sm-and-up">
-      <v-card-title>Преимущества</v-card-title>
+      <v-card-title class="card-title">Преимущества</v-card-title>
       <v-divider />
       <v-card-text class="pa-0">
         <v-row dense>
@@ -16,9 +15,9 @@
             <v-card class="subcard">
               <v-img
                 :src="card.src"
-                class="light white--text align-end"
+                class="subcard-text light white--text align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="190px"
+                height="180px"
               >
                 <v-card-title v-text="card.title"></v-card-title>
               </v-img>

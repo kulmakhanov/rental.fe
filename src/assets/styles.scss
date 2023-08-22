@@ -49,15 +49,6 @@
   // overflow: hidden;
 }
 
-/*
-.logo {
-    width: 68px;
-    height: 68px;
-}
-.card {
-  height: 100%;
-}
-*/
 /*  --------Mobile--------------------- */
 @media (max-width: 480px) {
   .main {
@@ -118,7 +109,12 @@
     flex-direction: column;
     height: 100vh;
   }
-
+  .subcard-text {
+    font-family: 'Gambetta', serif;
+    font-weight: 35px;
+    font-variation-settings: "wght" 311;
+    cursor: pointer;
+  }
 }
 /* --------Tabs--------------------- */
 
