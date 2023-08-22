@@ -22,52 +22,16 @@
           <a href="https://www.instagram.com/rentpro.kz/"  target="_blank">
             <v-icon size="48px" class="contacts-icon" color="black" @click="">mdi-instagram</v-icon>
           </a>
-          <p class="contact-subtext"> @rentpro.kz</p>
+          <p class="contact-subtext ml-4"> @rentpro.kz</p>
         </v-col>
       </v-row>
       <v-row>
         <v-col cols="12" sm="12" class="pb-0">
-          <YandexMap width="400" height="260"/>
+          <YandexMap width="278" height="280"/>
         </v-col>
       </v-row>
-      <v-divider class="mt-5"/>
-      <v-row class="mt-5">
-        <v-icon size="48px" color="black" class="contacts-icon">mdi-exclamation</v-icon>
-        <p class="contact-subtext">Просьба заранее уведомлять о приезде</p>
-      </v-row>
+      <v-divider />
     </v-container>
-    <!-- <v-container fluid class="hidden-xs-only mt-2">
-      <v-row>
-        <v-col cols="12" md="4">
-          <v-row>
-            <v-icon size="64px" class="mt-9 ml-3" color="black">mdi-map-marker</v-icon>
-            <p class="mt-14 ml-2">мкрн. Самал 2</p>
-          </v-row>
-          <v-row>
-            <v-icon size="64px" class="mt-10 ml-3" color="black">mdi-email-outline</v-icon>
-            <p class="mt-14 ml-2">rentpro.kz@gmail.com</p>
-          </v-row>
-          <v-row>
-            <v-icon size="64px" class="mt-9 ml-3" color="black" @click="">mdi-phone</v-icon>
-            <p class="mt-14 ml-2">+7 (700) 086-51-51</p>
-          </v-row>
-          <v-row>
-            <a href="https://www.instagram.com/rentpro.kz/"  target="_blank">
-              <v-icon size="64px" class="mt-12 ml-3" color="black" @click="">mdi-instagram</v-icon>
-            </a>
-            <p class="mt-16 ml-2">@rentpro.kz</p>
-          </v-row>
-        </v-col>
-        <v-col cols="12" md="8">
-          <YandexMap width="560" height="450"/>
-        </v-col>
-      </v-row>
-      <v-divider class="mt-10" />
-      <v-row class="d-flex mt-5">
-        <v-icon size="48px" color="black">mdi-exclamation</v-icon>
-        <p class="mt-5">Просьба заранее уведомлять о приезде к нам в офис</p>
-      </v-row>
-    </v-container> -->
   </v-card>
 </template>
 
@@ -88,8 +52,7 @@ export default {
 </script>
 
 <style scoped>
-
-.map {
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15)
+.main-card {
+  opacity: 80%;
 }
 </style>

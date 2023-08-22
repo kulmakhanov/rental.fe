@@ -105,11 +105,6 @@
     font-variation-settings: "wght" 582; 
     letter-spacing: 1px;
   }
-  .main-card {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
   .subcard-text {
     font-family: 'Gambetta', serif;
     font-weight: 35px;
@@ -122,7 +117,7 @@
   }
   .main-card {
     width: 320px;
-    height: 680px;
+    height: 660px;
   }
   .service-top-img{
     height: 180px;
@@ -198,6 +193,10 @@
     font-variation-settings: "wght" 582; 
     letter-spacing: 1px;
   }
+  .main-card {
+    width: 320px;
+    height: 660px;
+  }
 }
 
 /* --------Tabs--------------------- */
@@ -255,11 +254,31 @@
     font-variation-settings: "wght" 582; 
     letter-spacing: 1px;
   }
-  .about-container {
-    margin-top: 8px;
+  .big-container {
+    margin-top: 30px;
   }
   .main-card {
-    max-width: 780px;
+    width: 640px;
+    height: 930px;
+  }
+  .subcard-text {
+    font-family: 'Gambetta', serif;
+    font-size: 48px;
+    font-variation-settings: "wght" 311;
+    cursor: pointer;
+    height: 265px;
+  }
+  .service-top-img{
+    height: 270px;
+  }
+  .service-middle-img {
+    height: 265px;
+  }
+  .service-bottom-img {
+    height: 260px;
+  }
+  .contacts-icon {
+    margin-left: 37px;
   }
 }
 
