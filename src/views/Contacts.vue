@@ -1,31 +1,28 @@
 <template>
-  <v-card
-    class="main-card mx-auto"
-    max-width="780"
-  >
-    <v-container fluid class="hidden-sm-and-up">
+  <v-card class="main-card mx-auto">
+    <v-container fluid class="big-container">
       <v-card-title>Контакты</v-card-title>
       <v-divider />
       <v-row>
         <v-col col="12" sm="4">
-          <v-icon size="44px" class="mt-5 ml-15" color="black">mdi-map-marker</v-icon>
-          <p class="mt-2 ml-8">мкрн. Самал 2</p>
+          <v-icon size="48px" class="contacts-icon" color="black">mdi-map-marker</v-icon>
+          <p class="contact-subtext">мкрн. Самал 2</p>
         </v-col>
         <v-col col="12" sm="8" class="px-0">
-          <v-icon size="46px" class="mt-5 ml-12" color="black">mdi-email-outline</v-icon>
-          <p class="mt-2">rentpro.kz@gmail.com</p>
+          <v-icon size="48px" class="contacts-icon" color="black">mdi-email-outline</v-icon>
+          <p class="contact-subtext">ht-kz@gmail.com</p>
         </v-col>
       </v-row>
       <v-row>
         <v-col col="12" sm="4">
-          <v-icon size="44px" class="mt-5 ml-15" color="black">mdi-phone</v-icon>
-          <p class="mt-2 ml-5">+7 (700) 086-51-51</p>
+          <v-icon size="48px" class="contacts-icon" color="black">mdi-phone</v-icon>
+          <p class="contact-subtext">+7 (700) 086-51-51</p>
         </v-col>
         <v-col col="12" sm="8" class="px-0">
           <a href="https://www.instagram.com/rentpro.kz/"  target="_blank">
-            <v-icon size="44px" class="mt-5 ml-12" color="black" @click="">mdi-instagram</v-icon>
+            <v-icon size="48px" class="contacts-icon" color="black" @click="">mdi-instagram</v-icon>
           </a>
-          <p class="mt-2 ml-8"> @rentpro.kz</p>
+          <p class="contact-subtext"> @rentpro.kz</p>
         </v-col>
       </v-row>
       <v-row>
@@ -35,11 +32,11 @@
       </v-row>
       <v-divider class="mt-5"/>
       <v-row class="mt-5">
-        <v-icon size="38px" color="black">mdi-exclamation</v-icon>
-        <p class="mt-4">Просьба заранее уведомлять о приезде</p>
+        <v-icon size="48px" color="black" class="contacts-icon">mdi-exclamation</v-icon>
+        <p class="contact-subtext">Просьба заранее уведомлять о приезде</p>
       </v-row>
     </v-container>
-    <v-container fluid class="hidden-xs-only mt-2">
+    <!-- <v-container fluid class="hidden-xs-only mt-2">
       <v-row>
         <v-col cols="12" md="4">
           <v-row>
@@ -70,7 +67,7 @@
         <v-icon size="48px" color="black">mdi-exclamation</v-icon>
         <p class="mt-5">Просьба заранее уведомлять о приезде к нам в офис</p>
       </v-row>
-    </v-container>
+    </v-container> -->
   </v-card>
 </template>
 

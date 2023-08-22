@@ -1,9 +1,6 @@
 <template>
-  <v-card
-    class="main-card mx-auto"
-    max-width="780"
-  >
-    <v-container fluid class="hidden-sm-and-up">
+  <v-card class="main-card mx-auto">
+    <v-container fluid class="big-container">
       <v-card-title>Характеристики ноутбуков</v-card-title>
       <v-divider />
       <v-row>
@@ -60,10 +57,6 @@
                               <td class="text-left font-weight-bold">{{ "ОС" }}</td>
                               <td class="text-left">{{ laptop.ops }}</td>
                             </tr>
-                            <!-- <tr>
-                              <td class="text-left font-weight-bold">{{ "Размеры, вес" }}</td>
-                              <td class="text-left">{{ laptop.weight }}</td>
-                            </tr> -->
                           </tbody>
                         </v-simple-table>
                       </v-col>
@@ -76,7 +69,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid class="hidden-xs-only mt-2">
+    <!-- <v-container fluid class="hidden-xs-only mt-2">
       <v-card-title>Характеристики ноутбуков</v-card-title>
       <v-divider />
         <v-row>
@@ -132,10 +125,7 @@
                                 <td class="text-left font-weight-bold">{{ "ОС" }}</td>
                                 <td class="text-left">{{ laptop.ops }}</td>
                               </tr>
-                              <!-- <tr>
-                                <td class="text-left font-weight-bold">{{ "Размеры, вес" }}</td>
-                                <td class="text-left">{{ laptop.weight }}</td>
-                              </tr> -->
+
                             </tbody>
                           </v-simple-table>
                         </v-col>
@@ -147,7 +137,7 @@
             </v-carousel>
           </v-col>
         </v-row>
-    </v-container>
+    </v-container> -->
   </v-card>
 </template>
 
