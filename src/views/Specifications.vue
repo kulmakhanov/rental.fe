@@ -1,8 +1,7 @@
 <template>
-  <v-card class="main-card mx-auto">
+  <v-card class="main-card-spec mx-auto">
     <v-container fluid class="big-container">
       <v-card-title>Характеристики ноутбуков</v-card-title>
-      <v-divider />
       <v-row>
         <v-col cols="12" md="12" class="py-0">
           <v-carousel v-model="model" hide-delimiters>
@@ -25,7 +24,7 @@
                     <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
                   </v-btn>
                 </v-card-title>
-                <v-divider class="pb-1"/>
+                <v-divider v-show="show" class="pb-1"/>
                 <v-expand-transition>
                   <div v-show="show">
                     <v-row>

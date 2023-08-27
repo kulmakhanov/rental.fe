@@ -26,7 +26,7 @@
             </v-img>
           </v-card>
         </v-col>
-        <v-col cols="12">
+        <v-col cols="6">
           <v-card class="middle-card" color="#385F73" dark>
             <v-img
               :src="require('../../public/rental_laptop.jpg')"
@@ -58,7 +58,7 @@
             </v-img>
           </v-card>
         </v-col>
-        <v-col cols="12">
+        <v-col cols="6">
           <v-card class="bottom" color="#385F73" dark>
             <v-img
               :src="require('../../public/long-term_laptop.jpg')"
@@ -74,6 +74,9 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-card-actions class="footer">
+        <div class="footer-content">{{ "ASASASASAS" }}</div>
+      </v-card-actions>
     </v-container>
   </v-card>
 </template>

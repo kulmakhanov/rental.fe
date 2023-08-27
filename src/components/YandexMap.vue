@@ -38,11 +38,11 @@ export default {
   props: {
     width: {
       type: String,
-      default: "",
+      default: "500",
     },
     height: {
       type: String,
-      default: "",
+      default: "500",
     },
   },
   data() {

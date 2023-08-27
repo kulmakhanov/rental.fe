@@ -1,33 +1,33 @@
 <template>
-  <v-card class="main-card mx-auto">
+  <v-card class="main-card-contacts mx-auto">
     <v-container fluid class="big-container">
       <v-card-title>Контакты</v-card-title>
       <v-divider />
       <v-row>
-        <v-col col="12" sm="4">
+        <v-col col="12" sm="6">
           <v-icon size="48px" class="contacts-icon" color="black">mdi-map-marker</v-icon>
-          <p class="contact-subtext">мкрн. Самал 2</p>
+          <p class="contact-subtext ml-9">мкрн. Самал 2</p>
         </v-col>
-        <v-col col="12" sm="8" class="px-0">
+        <v-col col="12" sm="6" class="px-0">
           <v-icon size="48px" class="contacts-icon" color="black">mdi-email-outline</v-icon>
-          <p class="contact-subtext">ht-kz@gmail.com</p>
+          <p class="contact-subtext ml-9">ht-kz@gmail.com</p>
         </v-col>
       </v-row>
       <v-row>
-        <v-col col="12" sm="4">
+        <v-col col="12" sm="6">
           <v-icon size="48px" class="contacts-icon" color="black">mdi-phone</v-icon>
-          <p class="contact-subtext">+7 (700) 086-51-51</p>
+          <p class="contact-subtext ml-5">+7 (700) 086-51-51</p>
         </v-col>
-        <v-col col="12" sm="8" class="px-0">
+        <v-col col="12" sm="6" class="px-0">
           <a href="https://www.instagram.com/rentpro.kz/"  target="_blank">
             <v-icon size="48px" class="contacts-icon" color="black" @click="">mdi-instagram</v-icon>
           </a>
-          <p class="contact-subtext ml-4"> @rentpro.kz</p>
+          <p class="contact-subtext ml-12"> @rentpro.kz</p>
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" sm="12" class="pb-0">
-          <YandexMap width="278" height="280"/>
+        <v-col cols="12" sm="12" class="pb-0 d-flex align-center justify-center">
+          <YandexMap width="420" height="280"/>
         </v-col>
       </v-row>
       <v-divider />
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style scoped>
-.main-card {
+.main-card-contacts {
   opacity: 80%;
 }
 </style>

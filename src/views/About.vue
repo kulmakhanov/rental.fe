@@ -27,14 +27,17 @@
 </template>
   
 <script>
+import CardFooter from '@/components/CardFooter.vue';
+
 export default {
-  name: 'About',
-  data: () => ({
-    cards: [
-      { title: 'Выбор подходящего ноутбука', src: require("../../public/laptop_res1.webp"), flex: 12 },
-      { title: 'Установка необходимого ПО', src: require("../../public/laptop_res2.jpg"), flex: 12 },
-      { title: 'Доставка или самовывоз', src: require("../../public/laptop_res3.avif"), flex: 12 },
-    ],
-  }),
+    name: 'About',
+    data: () => ({
+        cards: [
+          { title: 'Выбор подходящего ноутбука', src: require("../../public/laptop_res1.webp"), flex: 12 },
+          { title: 'Установка необходимого ПО', src: require("../../public/laptop_res2.jpg"), flex: 6 },
+          { title: 'Доставка или самовывоз', src: require("../../public/laptop_res3.avif"), flex: 6 },
+        ],
+    }),
+    components: { CardFooter }
 }
 </script>
