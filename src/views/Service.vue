@@ -35,25 +35,7 @@
             >
               <v-card-title class="text-h5">Стоимость аренды</v-card-title>
               <v-card-subtitle>
-                <v-simple-table class="price-table-small" dense>
-                  <template #default>
-                    <thead>
-                      <tr>
-                        <th class="text-center">Срок</th>
-                        <th class="text-left">Цена</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr
-                        v-for="item in prices"
-                        :key="item.duration"
-                      >
-                        <td class="text-center">{{ item.duration }}</td>
-                        <td class="text-left">{{ item.price }}</td>
-                      </tr>
-                    </tbody>
-                  </template>
-                </v-simple-table>
+                {{ "От 5 000 тг. и выше (в зависимости от срока аренды)" }}
               </v-card-subtitle>
             </v-img>
           </v-card>
@@ -67,39 +49,27 @@
             >
               <v-card-title class="text-h5">Долгосрочная аренда</v-card-title>
               <v-card-subtitle>Вам требуется техника на несколько недель или месяцев?</v-card-subtitle>
-              <v-card-actions>
+              <v-card-actions class="mt-8">
                 <v-card-text>В этом случае вы можете рассчитывать на скидки до 80%</v-card-text>
               </v-card-actions>
             </v-img>
           </v-card>
         </v-col>
       </v-row>
-      <v-card-actions class="footer">
-        <div class="footer-content">{{ "ASASASASAS" }}</div>
-      </v-card-actions>
+        <v-card-title>Нам доверяют</v-card-title>
+        <v-divider/>
+        <CardCarousel/>
     </v-container>
   </v-card>
 </template>
 
 <script>
+import CardCarousel from '@/components/CardCarousel';
 export default {
+  components: { CardCarousel },
   name: 'Service',
   data() {
     return {
-      prices: [
-        {
-          duration: "1 день",
-          price: "4 000 тг.",
-        },
-        {
-          duration: "4 дня",
-          price: "14 000 тг.",
-        },
-        {
-          duration: "14 дней",
-          price: "29 700 тг.",
-        },
-      ],
     }
   },
   methods: {
