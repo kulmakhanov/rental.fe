@@ -107,6 +107,10 @@ export default {
           title: 'Chimbulak',
           src: require("../../public/company-logo/chimbulak-gornolyizhka.png")
         },
+        {
+          title: 'Akimat',
+          src: require("../../public/company-logo/akimat_almaty.jpg")
+        },
       ],
     }
   },

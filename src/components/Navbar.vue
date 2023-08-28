@@ -54,13 +54,13 @@ export default {
   components: { Footer },
   data() {
     return {
-      appTitle: "HireTech",
+      appTitle: "hiretech",
       sidebar: false,
       menuItems: [
-        { title: "About", path: "/about", icon: "mdi-information-box-outline" },
-        { title: "Service", path: "/service", icon: "mdi-account-group-outline" },
-        { title: "Contacts", path: "/contacts", icon: "mdi-card-account-phone-outline" },
-        { title: "Specifications", path: "/specifications", icon: "mdi-cogs" },
+        { title: "Преимущества", path: "/about", icon: "mdi-information-box-outline" },
+        { title: "Услуги", path: "/service", icon: "mdi-account-group-outline" },
+        { title: "Контакты", path: "/contacts", icon: "mdi-card-account-phone-outline" },
+        { title: "Каталог", path: "/specifications", icon: "mdi-format-list-bulleted" },
       ],
     }
   }

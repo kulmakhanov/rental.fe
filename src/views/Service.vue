@@ -11,7 +11,7 @@
               class="service-top-img light white--text align-start"
               gradient="to bottom, rgba(0,0,0,.4), rgba(0,0,0,.8)"
             >
-              <v-card-title class="text-h5">"Бизнес класс" аренда</v-card-title>
+              <v-card-title class="card-title">"Бизнес класс" аренда</v-card-title>
               <v-card-subtitle>Ноутбуки бизнес класса справятся с любыми задачами на отлично</v-card-subtitle>
               <v-card-actions>
                 <v-btn
@@ -20,27 +20,30 @@
                 @click="goToSpecificatons"
                 >
                   <v-icon left>mdi-format-list-bulleted</v-icon>
-                  {{ "каталог" }}
+                  {{ "каталог ноутбуков" }}
                 </v-btn>
               </v-card-actions>
             </v-img>
           </v-card>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12">
           <v-card class="middle-card" color="#385F73" dark>
             <v-img
               :src="require('../../public/rental_laptop.jpg')"
               class="service-middle-img light white--text align-start"
               gradient="to bottom, rgba(0,0,0,.4), rgba(0,0,0,.8)"
             >
-              <v-card-title class="text-h5">Стоимость аренды</v-card-title>
+              <v-card-title class="card-title text pt-0">Стоимость аренды</v-card-title>
               <v-card-subtitle>
                 {{ "От 5 000 тг. и выше (в зависимости от срока аренды)" }}
               </v-card-subtitle>
+              <v-card-title class="card-title pt-0">Долгосрочная аренда</v-card-title>
+              <v-card-subtitle class="py-0">При долгосрочной аренде</v-card-subtitle>
+              <v-card-text class="py-0">Вы можете рассчитывать на скидки до 80%</v-card-text>
             </v-img>
           </v-card>
         </v-col>
-        <v-col cols="6">
+        <!-- <v-col cols="6">
           <v-card class="bottom" color="#385F73" dark>
             <v-img
               :src="require('../../public/long-term_laptop.jpg')"
@@ -54,7 +57,7 @@
               </v-card-actions>
             </v-img>
           </v-card>
-        </v-col>
+        </v-col> -->
       </v-row>
         <v-card-title>Нам доверяют</v-card-title>
         <v-divider/>

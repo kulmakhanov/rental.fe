@@ -6,7 +6,7 @@
       </div>
       <div class="main-subheader d-flex">
         <h4>+7 (700) 086-51-51</h4>
-        <v-icon color="white" class="ml-1" @click="">mdi-whatsapp</v-icon>
+        <v-icon color="white" class="ml-1" @click="toWhatsApp(phoneNumber)">mdi-whatsapp</v-icon>
       </div>
       <div class="main-subheaderSec d-flex">
         <h4>rentpro.kz@gmail.com</h4>
@@ -18,6 +18,17 @@
 <script>
 export default {
   name: 'Main',
+  data() {
+    return {
+      phoneNumber: "77059990868"
+    }
+  },
+  methods: {
+    toWhatsApp(phoneNumber) {
+      let whatsAppLink = 'https://wa.me/' + this.phoneNumber
+      window.open(whatsAppLink, '_blank')
+    },
+  }
 }
 </script>
 
