@@ -13,6 +13,14 @@ export default {
   components: {
     Navbar,
   },
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to, from) {
+        document.title = 'Hiretech - ' + to.meta.title || 'Some different title'
+      }
+    },
+  },
   data() {
     return {
       backGroundSrc: require('../public/main_background.avif')

@@ -11,22 +11,27 @@ const routerOptions = [
     {
         path: '/',
         component: 'Main',
+        meta: { title: 'Главная' },
     },
     {
         path: '/features',
-        component: 'Features'
+        component: 'Features',
+        meta: { title: 'Преимущества' },
     },
     {
         path: '/service',
         component: 'Service',
+        meta: { title: 'Услуги' },
     },
     {
         path: '/contacts',
         component: 'Contacts',
+        meta: { title: 'Контакты' },
     },
     {
         path: '/specifications',
         component: 'Specifications',
+        meta: { title: 'Каталог' },
     }
 ]
 
