@@ -147,6 +147,9 @@
   .contacts-icon {
     margin-left: 64px;
   }
+  .button-spec {
+    margin-top: 10px;
+  }
 }
 /* --------Tabs--------------------- */
 
@@ -238,9 +241,10 @@
     margin-left: 64px;
   }
   .card-title-bottom {
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    margin-top: 15px;
+  }
+  .button-spec {
+    margin-top: 12px;
   }
 }
 
@@ -333,6 +337,12 @@
   .contacts-icon {
     margin-left: 64px;
   }
+  .card-title-bottom {
+    margin-top: 27px;
+  }
+  .button-spec {
+    margin-top: 30px;
+  }
 }
 
 
@@ -422,6 +432,12 @@
   .contacts-icon {
     margin-left: 64px;
   }
+  .card-title-bottom {
+    margin-top: 27px;
+  }
+  .button-spec {
+    margin-top: 35px;
+  }
 }
 
 /* --------Desktops and large--------------------- */
@@ -510,7 +526,10 @@
   .contacts-icon {
     margin-left: 64px;
   }
-  // .contact-subtext {
-  //   margin-left: 34px;
-  // }
+  .card-title-bottom {
+    margin-top: 25px;
+  }
+  .button-spec {
+    margin-top: 35px;
+  }
 }

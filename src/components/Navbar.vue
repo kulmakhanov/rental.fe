@@ -57,7 +57,7 @@ export default {
       appTitle: "hiretech",
       sidebar: false,
       menuItems: [
-        { title: "Преимущества", path: "/about", icon: "mdi-information-box-outline" },
+        { title: "Преимущества", path: "/features", icon: "mdi-information-box-outline" },
         { title: "Услуги", path: "/service", icon: "mdi-account-group-outline" },
         { title: "Контакты", path: "/contacts", icon: "mdi-card-account-phone-outline" },
         { title: "Каталог", path: "/specifications", icon: "mdi-format-list-bulleted" },

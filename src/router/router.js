@@ -13,12 +13,8 @@ const routerOptions = [
         component: 'Main',
     },
     {
-        path: '/about',
-        component: 'About'
-    },
-    {
         path: '/features',
-        component: 'Features',
+        component: 'Features'
     },
     {
         path: '/service',

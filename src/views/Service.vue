@@ -15,7 +15,7 @@
               <v-card-subtitle>Ноутбуки бизнес класса справятся с любыми задачами на отлично</v-card-subtitle>
               <v-card-actions>
                 <v-btn
-                class="light white--text"
+                class="button-spec light white--text"
                 color="transparent"
                 @click="goToSpecificatons"
                 >
@@ -37,7 +37,7 @@
               <v-card-subtitle>
                 {{ "От 5 000 тг. и выше (в зависимости от срока аренды)" }}
               </v-card-subtitle>
-              <v-card-title class="card-title pt-0">Долгосрочная аренда</v-card-title>
+              <v-card-title class="card-title-bottom pt-0">Долгосрочная аренда</v-card-title>
               <v-card-subtitle class="py-0">При долгосрочной аренде</v-card-subtitle>
               <v-card-text class="py-0">Вы можете рассчитывать на скидки до 80%</v-card-text>
             </v-img>
