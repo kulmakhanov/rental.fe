@@ -1,17 +1,19 @@
 
 .menu-buttons {
-  font-family: 'Gambetta', serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: bolder;
   text-transform: uppercase;
 }
 
 .main-button {
-  font-family: 'Gambetta', serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 35px;
   font-variation-settings: "wght" 311;
   cursor: pointer;
 }
 .nav-mobile-list {
-  font-family: 'Gambetta', serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: large;
   font-variation-settings: "wght" 311;
   text-transform: uppercase;
 }
@@ -34,13 +36,10 @@
   font-variation-settings: "wght" 582; 
   letter-spacing: 1px;
 }
+.footer-text {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;;
+}
 
-// .footer {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   background-color: transparent;
-// }
 .main-container {
   height: 100vh;
   background-image: url("../../public/main_back.jpg");
@@ -56,12 +55,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
   }
   .main-header {
-    font-size: 32px;
+    justify-content: end;
+    font-size: 31px;
     text-transform: uppercase;
-    font-family: 'Gambetta', serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -77,8 +77,8 @@
   .main-subheader {
     justify-content: end;
     letter-spacing: -1px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     transition: 700ms ease;
-    // margin-left: 70px;
     font-variation-settings: "wght" 311;
     font-size: 1.2em;
     line-height: 150%;
@@ -96,6 +96,7 @@
     font-variation-settings: "wght" 311;
     outline: none;
     letter-spacing: -1px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.2em;
     line-height: 150%;
     color: MintCream;
@@ -106,7 +107,7 @@
     letter-spacing: 1px;
   }
   .subcard-text {
-    font-family: 'Gambetta', serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 35px;
     font-variation-settings: "wght" 311;
     cursor: pointer;
@@ -114,7 +115,7 @@
   }
   .main-card {
     width: 400px;
-    margin-top: 40px;
+    margin-top: 15px;
   }
   .service-top-img{
     height: 180px;
@@ -131,8 +132,7 @@
   .contact-subtext {
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Gambetta', serif;
-    // margin-left: 34px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   }
   .main-card-spec {
     width: 400px;
@@ -145,10 +145,22 @@
     margin-top: 20px;
   }
   .contacts-icon {
-    margin-left: 64px;
+    margin-left: 54px;
   }
   .button-spec {
     margin-top: 10px;
+  }
+  .contact-subtext-address {
+    margin-left: 26px;
+  }
+  .contact-subtext-email {
+    margin-left: 22px;
+  }
+  .contact-subtext-phone {
+    margin-left: 18px;
+  }
+  .contact-subtext-insta {
+    margin-left: 34px;
   }
 }
 /* --------Tabs--------------------- */
@@ -161,9 +173,10 @@
     align-items: end;
   }
   .main-header {
-    font-size: 48px;
+    justify-content: end;
+    font-size: 38px;
     text-transform: uppercase;
-    font-family: 'Gambetta', serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -180,7 +193,7 @@
     justify-content: end;
     letter-spacing: -1px;
     transition: 700ms ease;
-    margin-left: 270px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-variation-settings: "wght" 311;
     font-size: 1.2em;
     line-height: 150%;
@@ -198,6 +211,7 @@
     font-variation-settings: "wght" 311;
     outline: none;
     letter-spacing: -1px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.2em;
     line-height: 150%;
     color: MintCream;
@@ -212,7 +226,7 @@
     width: 570px;
   }
   .subcard-text {
-    font-family: 'Gambetta', serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 48px;
     font-variation-settings: "wght" 311;
     cursor: pointer;
@@ -240,6 +254,18 @@
   .contacts-icon {
     margin-left: 64px;
   }
+  .contact-subtext-address {
+    margin-left: 36px;
+  }
+  .contact-subtext-email {
+    margin-left: 26px;
+  }
+  .contact-subtext-phone {
+    margin-left: 19px;
+  }
+  .contact-subtext-insta {
+    margin-left: 42px;
+  }
   .card-title-bottom {
     margin-top: 15px;
   }
@@ -257,9 +283,9 @@
     align-items: end;
   }
   .main-header {
-    font-size: 56px;
+    font-size: 44px;
     text-transform: uppercase;
-    font-family: 'Gambetta', serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -276,8 +302,8 @@
     justify-content: end;
     letter-spacing: -1px;
     transition: 700ms ease;
-    margin-left: 270px;
     font-variation-settings: "wght" 311;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.2em;
     line-height: 150%;
     color: MintCream;
@@ -289,11 +315,11 @@
   }
   .main-subheaderSec {
     justify-content: end;
-    margin-left: 270px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
     outline: none;
     letter-spacing: -1px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.2em;
     line-height: 150%;
     color: MintCream;
@@ -306,10 +332,10 @@
   
   .main-card {
     margin-top: 15px;
-    width: 780px;
+    width: 750px;
   }
   .subcard-text {
-    font-family: 'Gambetta', serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 48px;
     font-variation-settings: "wght" 311;
     cursor: pointer;
@@ -335,7 +361,22 @@
     height: 190px;
   }
   .contacts-icon {
-    margin-left: 64px;
+    margin-left: 70px;
+  }
+  .contact-subtext-address {
+    margin-left: 38px;
+  }
+  .contact-subtext-email {
+    margin-left: 28px;
+  }
+  .contact-subtext-phone {
+    margin-left: 21px;
+  }
+  .contact-subtext-insta {
+    margin-left: 48px;
+  }
+  .card-title-bottom {
+    margin-top: 15px;
   }
   .card-title-bottom {
     margin-top: 27px;
@@ -353,12 +394,11 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    text-align: right;
   }
   .main-header {
-    font-size: 56px;
+    font-size: 48px;
     text-transform: uppercase;
-    font-family: 'Gambetta', serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -376,6 +416,7 @@
     letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.2em;
     line-height: 150%;
     color: MintCream;
@@ -391,6 +432,7 @@
     font-variation-settings: "wght" 311;
     outline: none;
     letter-spacing: -1px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.2em;
     line-height: 150%;
     color: MintCream;
@@ -408,6 +450,7 @@
     width: 780px;
   }
   .subcard-text {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     height: 170px;
   }
   .main-card-contacts {
@@ -430,7 +473,19 @@
     height: 190px;
   }
   .contacts-icon {
-    margin-left: 64px;
+    margin-left: 72px;
+  }
+  .contact-subtext-address {
+    margin-left: 40px;
+  }
+  .contact-subtext-email {
+    margin-left: 32px;
+  }
+  .contact-subtext-phone {
+    margin-left: 23px;
+  }
+  .contact-subtext-insta {
+    margin-left: 50px;
   }
   .card-title-bottom {
     margin-top: 27px;
@@ -447,12 +502,11 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    text-align: right;
   }
   .main-header {
-    font-size: 56px;
+    font-size: 50px;
     text-transform: uppercase;
-    font-family: 'Gambetta', serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -470,6 +524,7 @@
     letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.2em;
     line-height: 150%;
     color: MintCream;
@@ -485,6 +540,7 @@
     font-variation-settings: "wght" 311;
     outline: none;
     letter-spacing: -1px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.2em;
     line-height: 150%;
     color: MintCream;
@@ -498,6 +554,7 @@
     margin-top: 8px;
   }
   .subcard-text {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     height: 170px;
   }
   .main-card {
@@ -524,7 +581,19 @@
     height: 190px;
   }
   .contacts-icon {
-    margin-left: 64px;
+    margin-left: 74px;
+  }
+  .contact-subtext-address {
+    margin-left: 42px;
+  }
+  .contact-subtext-email {
+    margin-left: 34px;
+  }
+  .contact-subtext-phone {
+    margin-left: 25px;
+  }
+  .contact-subtext-insta {
+    margin-left: 54px;
   }
   .card-title-bottom {
     margin-top: 25px;

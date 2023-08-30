@@ -6,22 +6,22 @@
       <v-row>
         <v-col col="12" sm="6">
           <v-icon size="48px" class="contacts-icon" color="black">mdi-map-marker</v-icon>
-          <p class="contact-subtext ml-9">мкрн. Самал 2</p>
+          <p class="contact-subtext-address">мкрн. Самал 2</p>
         </v-col>
         <v-col col="12" sm="6" class="px-0">
           <v-icon size="48px" class="contacts-icon" color="black">mdi-email-outline</v-icon>
-          <p class="contact-subtext ml-9">ht-kz@gmail.com</p>
+          <p class="contact-subtext-email">ht-kz@gmail.com</p>
         </v-col>
       </v-row>
       <v-row>
         <v-col col="12" sm="6">
           <v-icon size="48px" class="contacts-icon" color="black" @click="toWhatsApp(phoneNumber)">mdi-phone</v-icon>
-          <p class="contact-subtext ml-5">+7 (700) 086-51-51</p>
+          <p class="contact-subtext-phone">+7 (700) 086-51-51</p>
         
         </v-col>
         <v-col col="12" sm="6" class="px-0">
           <v-icon size="48px" class="contacts-icon" color="black" @click="toInsagram(instaLink)">mdi-instagram</v-icon>
-          <p class="contact-subtext ml-12"> @rentpro.kz</p>
+          <p class="contact-subtext-insta"> @rentpro.kz</p>
         </v-col>
       </v-row>
       <v-row>

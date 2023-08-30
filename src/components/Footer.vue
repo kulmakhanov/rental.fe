@@ -1,7 +1,7 @@
 <template>
   <v-footer app class="footer" padless>
     <v-col
-      class="text-center"
+      class="footer-text text-center"
       cols="12"
     >
       {{ new Date().getFullYear() }} — <strong>hiretech.kz</strong>

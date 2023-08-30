@@ -44,7 +44,7 @@
           </v-card>
         </v-col>
       </v-row>
-        <v-card-title>Нам доверяют</v-card-title>
+        <v-card-title class="pb-0">Нам доверяют</v-card-title>
         <v-divider/>
         <CardCarousel/>
     </v-container>

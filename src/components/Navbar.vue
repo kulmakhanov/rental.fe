@@ -1,6 +1,20 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="sidebar" app>
+    <v-navigation-drawer v-model="sidebar" app width="100%">
+      <div class="d-flex align-center">
+      <router-link to="/" tag="span" class="main-button d-flex ml-5">
+        {{ appTitle }}
+      </router-link>
+      <v-spacer />
+      <v-btn 
+        class="d-none d-flex"
+        x-large
+        icon
+        @click="sidebar = !sidebar"
+      >
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
+    </div>
       <v-list>
         <v-list-item
           class="nav-mobile-list"
@@ -12,8 +26,10 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>{{ item.title }}</v-list-item-content>
+          <v-icon>mdi-chevron-right</v-icon>
         </v-list-item>
       </v-list>
+      <Footer />
     </v-navigation-drawer>
     <v-app-bar app class="app-bar">
       <span class="small-nav hidden-sm-and-up">
@@ -23,7 +39,6 @@
       <v-toolbar-title>
         <router-link to="/" tag="span" class="main-button">
           {{ appTitle }}
-          <!-- <v-icon color="black" class="mt-1" small>mdi-laptop</v-icon> -->
         </router-link>
       </v-toolbar-title>
       <v-spacer/>
