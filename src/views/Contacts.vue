@@ -15,7 +15,7 @@
       </v-row>
       <v-row>
         <v-col col="12" sm="6">
-          <a href="https://wa.me/7059990868" target="_blank">
+          <a href="https://wa.me/77000865151" target="_blank">
             <v-icon size="48px" class="contacts-icon" color="black" @click="">mdi-phone</v-icon>
           </a>
           <p class="contact-subtext ml-5">+7 (700) 086-51-51</p>

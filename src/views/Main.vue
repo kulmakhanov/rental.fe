@@ -20,7 +20,7 @@ export default {
   name: 'Main',
   data() {
     return {
-      phoneNumber: "77059990868"
+      phoneNumber: "77000865151"
     }
   },
   methods: {
