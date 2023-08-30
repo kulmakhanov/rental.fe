@@ -15,16 +15,12 @@
       </v-row>
       <v-row>
         <v-col col="12" sm="6">
-          <a href="https://wa.me/77000865151" target="_blank">
-            <v-icon size="48px" class="contacts-icon" color="black" @click="">mdi-phone</v-icon>
-          </a>
+          <v-icon size="48px" class="contacts-icon" color="black" @click="toWhatsApp(phoneNumber)">mdi-phone</v-icon>
           <p class="contact-subtext ml-5">+7 (700) 086-51-51</p>
         
         </v-col>
         <v-col col="12" sm="6" class="px-0">
-          <a href="https://www.instagram.com/rentpro.kz/"  target="_blank">
-            <v-icon size="48px" class="contacts-icon" color="black" @click="">mdi-instagram</v-icon>
-          </a>
+          <v-icon size="48px" class="contacts-icon" color="black" @click="toInsagram(instaLink)">mdi-instagram</v-icon>
           <p class="contact-subtext ml-12"> @rentpro.kz</p>
         </v-col>
       </v-row>
@@ -47,8 +43,18 @@ export default {
   },
   data() {
     return {
-      mapUrl: "https://yandex.kz/map-widget/v1/?ll=76.916743%2C43.233219&mode=whatshere&utm_source=main_stripe_big&whatshere%5Bpoint%5D=76.915446%2C43.236787&whatshere%5Bzoom%5D=17&z=15.89" 
-
+      mapUrl: "https://yandex.kz/map-widget/v1/?ll=76.916743%2C43.233219&mode=whatshere&utm_source=main_stripe_big&whatshere%5Bpoint%5D=76.915446%2C43.236787&whatshere%5Bzoom%5D=17&z=15.89",
+      phoneNumber: "77000865151",
+      instaLink: "https://www.instagram.com/rentpro.kz/"
+    }
+  },
+  methods: {
+    toWhatsApp(phoneNumber) {
+      let whatsAppLink = 'https://wa.me/' + phoneNumber
+      window.open(whatsAppLink, '_blank')
+    },
+    toInsagram(instaLink) {
+      window.open(instaLink, '_blank')
     }
   },
 }

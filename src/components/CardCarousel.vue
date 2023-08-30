@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       model: 0,
-      itemsPerSlide: 5,
+      itemsPerSlide: 4,
       items: [
         {
           title: 'Mitsubishi',

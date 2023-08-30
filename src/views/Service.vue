@@ -43,21 +43,6 @@
             </v-img>
           </v-card>
         </v-col>
-        <!-- <v-col cols="6">
-          <v-card class="bottom" color="#385F73" dark>
-            <v-img
-              :src="require('../../public/long-term_laptop.jpg')"
-              class="service-bottom-img light white--text align-start"
-              gradient="to bottom, rgba(0,0,0,.4), rgba(0,0,0,.8)"
-            >
-              <v-card-title class="text-h5">Долгосрочная аренда</v-card-title>
-              <v-card-subtitle>Вам требуется техника на несколько недель или месяцев?</v-card-subtitle>
-              <v-card-actions class="mt-8">
-                <v-card-text>В этом случае вы можете рассчитывать на скидки до 80%</v-card-text>
-              </v-card-actions>
-            </v-img>
-          </v-card>
-        </v-col> -->
       </v-row>
         <v-card-title>Нам доверяют</v-card-title>
         <v-divider/>
