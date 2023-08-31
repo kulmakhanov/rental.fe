@@ -2,13 +2,14 @@
   <v-container fluid class="main d-flex pr-0">
     <div>
       <div>
-        <h1 class="main-header d-flex">Аренда ноутбуков <br> в Алматы</h1>
+        <h1 class="main-header">Аренда ноутбуков <br> в Алматы</h1>
       </div>
-      <div class="main-subheader d-flex">
-        <h4>+7 (700) 086-51-51</h4>
-        <v-icon color="white" class="ml-1" @click="toWhatsApp(phoneNumber)">mdi-whatsapp</v-icon>
+      <div class="main-subheader">
+        <h4>+7 (700) 086-51-51
+          <v-icon color="white" class="mb-1" @click="toWhatsApp(phoneNumber)">mdi-whatsapp</v-icon>
+        </h4>
       </div>
-      <div class="main-subheaderSec d-flex">
+      <div class="main-subheaderSec">
         <h4>rentpro.kz@gmail.com</h4>
       </div>
     </div>
