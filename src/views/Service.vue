@@ -1,7 +1,7 @@
 <template>
   <v-card class="main-card mx-auto">
     <v-container fluid class="big-container">
-      <v-card-title class="card-title">Услуги</v-card-title>
+      <v-card-title class="card-title">{{ $t('services') }}</v-card-title>
       <v-divider />
       <v-row dense>
         <v-col cols="12">
@@ -11,8 +11,8 @@
               class="service-top-img light white--text align-start"
               gradient="to bottom, rgba(0,0,0,.4), rgba(0,0,0,.8)"
             >
-              <v-card-title class="card-title">"Бизнес класс" аренда</v-card-title>
-              <v-card-subtitle>Ноутбуки бизнес класса справятся с любыми задачами на отлично</v-card-subtitle>
+              <v-card-title class="card-title">{{ $t('business_class_rental') }}</v-card-title>
+              <v-card-subtitle>{{ $t('high_performance_laptops') }}</v-card-subtitle>
               <v-card-actions>
                 <v-btn
                 class="button-spec light white--text"
@@ -20,7 +20,7 @@
                 @click="goToSpecificatons"
                 >
                   <v-icon left>mdi-format-list-bulleted</v-icon>
-                  {{ "каталог ноутбуков" }}
+                  {{ $t('laptop_catalog') }}
                 </v-btn>
               </v-card-actions>
             </v-img>
@@ -33,18 +33,16 @@
               class="service-middle-img light white--text align-start"
               gradient="to bottom, rgba(0,0,0,.4), rgba(0,0,0,.8)"
             >
-              <v-card-title class="card-title text pt-0">Стоимость аренды</v-card-title>
-              <v-card-subtitle>
-                {{ "От 5 000 тг. и выше (в зависимости от срока аренды)" }}
-              </v-card-subtitle>
-              <v-card-title class="card-title-bottom pt-0">Долгосрочная аренда</v-card-title>
-              <v-card-subtitle class="py-0">При долгосрочной аренде</v-card-subtitle>
-              <v-card-text class="py-0">Вы можете рассчитывать на скидки до 80%</v-card-text>
+              <v-card-title class="card-title text pt-0">{{ $t('rental_cost') }}</v-card-title>
+              <v-card-subtitle>{{ $t('rental_price') }}</v-card-subtitle>
+              <v-card-title class="card-title-bottom pt-0">{{ $t('long_term_rental') }}</v-card-title>
+              <v-card-subtitle class="py-0">{{ $t('for_long_term_rent') }}</v-card-subtitle>
+              <v-card-text class="py-0">{{ $t('percent_sale') }}</v-card-text>
             </v-img>
           </v-card>
         </v-col>
       </v-row>
-        <v-card-title class="pb-0">Нам доверяют</v-card-title>
+        <v-card-title class="pb-0">{{ $t('trust_us') }}</v-card-title>
         <v-divider/>
         <CardCarousel/>
     </v-container>

@@ -1,12 +1,12 @@
 <template>
   <v-card class="main-card-contacts mx-auto">
     <v-container fluid class="big-container">
-      <v-card-title>Контакты</v-card-title>
+      <v-card-title>{{ $t('contacts') }}</v-card-title>
       <v-divider />
       <v-row>
         <v-col col="12" sm="6">
           <v-icon size="48px" class="contacts-icon" color="black">mdi-map-marker</v-icon>
-          <p class="contact-subtext-address">мкрн. Самал 2</p>
+          <p class="contact-subtext-address">{{ $t('samal_address') }}</p>
         </v-col>
         <v-col col="12" sm="6" class="px-0">
           <v-icon size="48px" class="contacts-icon" color="black">mdi-email-outline</v-icon>

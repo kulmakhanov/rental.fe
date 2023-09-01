@@ -2,7 +2,7 @@
   <v-container fluid class="main d-flex pr-0">
     <div>
       <div>
-        <h1 class="main-header">Аренда ноутбуков <br> в Алматы</h1>
+        <h1 class="main-header">{{ $t('rental_service') }}<br>{{ $t('in_almaty') }}</h1>
       </div>
       <div class="main-subheader">
         <h4>+7 (700) 086-51-51

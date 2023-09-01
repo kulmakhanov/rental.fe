@@ -25,7 +25,7 @@
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
-          <v-list-item-content>{{ item.title }}</v-list-item-content>
+          <v-list-item-content>{{ $t(item.title) }}</v-list-item-content>
           <v-icon>mdi-chevron-right</v-icon>
         </v-list-item>
       </v-list>
@@ -51,7 +51,7 @@
           :to="item.path"
         >
           <v-icon left dark>{{ item.icon }}</v-icon>
-          <span>{{ item.title }}</span>
+          <span>{{ $t(item.title) }}</span>
         </v-btn>
       </v-toolbar-items>
     </v-app-bar>
@@ -72,10 +72,10 @@ export default {
       appTitle: "hiretech",
       sidebar: false,
       menuItems: [
-        { title: "Преимущества", path: "/features", icon: "mdi-information-box-outline" },
-        { title: "Услуги", path: "/service", icon: "mdi-account-group-outline" },
-        { title: "Контакты", path: "/contacts", icon: "mdi-card-account-phone-outline" },
-        { title: "Каталог", path: "/specifications", icon: "mdi-format-list-bulleted" },
+        { title: "features", path: "/features", icon: "mdi-information-box-outline" },
+        { title: "services", path: "/service", icon: "mdi-account-group-outline" },
+        { title: "contacts", path: "/contacts", icon: "mdi-card-account-phone-outline" },
+        { title: "catalog", path: "/specifications", icon: "mdi-format-list-bulleted" },
       ],
     }
   }

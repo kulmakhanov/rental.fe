@@ -1,7 +1,7 @@
 <template>
   <v-card class="main-card-spec mx-auto">
     <v-container fluid class="big-container">
-      <v-card-title>Характеристики ноутбуков</v-card-title>
+      <v-card-title>{{ $t('laptop_specifications') }}</v-card-title>
       <v-row>
         <v-col cols="12" md="12" class="py-0">
           <v-carousel v-model="model" hide-delimiters>
@@ -32,27 +32,27 @@
                         <v-simple-table class="price-table-small" dense>
                           <tbody>
                             <tr>
-                              <td class="text-left font-weight-bold">{{ "Диагональ экрана" }}</td>
+                              <td class="text-left font-weight-bold">{{ $t('screen_diagonal') }}</td>
                               <td class="text-left">{{ laptop.screen }}</td>
                             </tr>
                             <tr>
-                              <td class="text-left font-weight-bold">{{ "Процессор" }}</td>
+                              <td class="text-left font-weight-bold">{{ $t('cpu') }}</td>
                               <td class="text-left">{{ laptop.cpu }}</td>
                             </tr>
                             <tr>
-                              <td class="text-left font-weight-bold">{{ "Оперативная память" }}</td>
+                              <td class="text-left font-weight-bold">{{ $t('ram') }}</td>
                               <td class="text-left">{{ laptop.ram }}</td>
                             </tr>
                             <tr>
-                              <td class="text-left font-weight-bold">{{ "Хранение данных" }}</td>
+                              <td class="text-left font-weight-bold">{{ $t('hdd') }}</td>
                               <td class="text-left">{{ laptop.hdd }}</td>
                             </tr>
                             <tr>
-                              <td class="text-left font-weight-bold">{{ "Видеокарта" }}</td>
+                              <td class="text-left font-weight-bold">{{ $t('videocard') }}</td>
                               <td class="text-left">{{ laptop.videocard }}</td>
                             </tr>
                             <tr>
-                              <td class="text-left font-weight-bold">{{ "ОС" }}</td>
+                              <td class="text-left font-weight-bold">{{ $t('operation_system') }}</td>
                               <td class="text-left">{{ laptop.ops }}</td>
                             </tr>
                           </tbody>
