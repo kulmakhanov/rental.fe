@@ -28,6 +28,18 @@
   background-position: center;
   overflow: hidden;
 }
+.flags {
+  height: 32px;
+  width: 38px;
+}
+.locale-text {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 19px;
+  margin-left: 2px;
+  color: rgb(48, 48, 48);
+}
 
 
 /*  --------Mobile--------------------- */

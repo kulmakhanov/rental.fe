@@ -28,12 +28,16 @@
           <v-list-item-content>{{ $t(item.title) }}</v-list-item-content>
           <v-icon>mdi-chevron-right</v-icon>
         </v-list-item>
+        <v-divider class="py-1"/>
+        <v-list-item>
+          <LocaleSetterSmall @toggle="toggle" />
+        </v-list-item>
       </v-list>
       <Footer />
     </v-navigation-drawer>
     <v-app-bar app class="app-bar">
       <span class="small-nav hidden-sm-and-up">
-        <v-app-bar-nav-icon @click="sidebar = !sidebar">
+        <v-app-bar-nav-icon @click="toggle">
         </v-app-bar-nav-icon>
       </span>
       <v-toolbar-title>
@@ -52,8 +56,9 @@
         >
           <v-icon left dark>{{ item.icon }}</v-icon>
           <span>{{ $t(item.title) }}</span>
-        </v-btn>
-      </v-toolbar-items>
+        </v-btn> 
+        <LocaleSetter/>
+      </v-toolbar-items>     
     </v-app-bar>
     <v-main class="main-container">
       <router-view></router-view>
@@ -64,10 +69,16 @@
 
 <script>
 import Footer from '../components/Footer'
+import LocaleSetter from './LocaleSetter'
+import LocaleSetterSmall from './LocaleSetterSmall'
 export default {
   name: 'Navbar',
-  components: { Footer },
-  data() {
+  components: { 
+    Footer,
+    LocaleSetter,
+    LocaleSetterSmall,
+  },
+  data() {  
     return {
       appTitle: "hiretech",
       sidebar: false,
@@ -78,14 +89,11 @@ export default {
         { title: "catalog", path: "/specifications", icon: "mdi-format-list-bulleted" },
       ],
     }
-  }
+  },
+  methods: {
+    toggle() {
+      this.sidebar = !this.sidebar
+    },
+  },
 }
 </script>
-
-<style scoped>
-
-/* .app-bar {
-  background-color: #ff5722;
-  color: #ffffff;
-} */
-</style>

@@ -1,6 +1,8 @@
 // locales/kz.js
 
 export default {
+  choose_language: 'Тілді таңдаңыз',
+  btnIcon: require('../../public/flags-locales/kz.png'),
   features: 'Артықшылықтар',
   services: 'қызметтер',
   contacts: 'Контакттар',
