@@ -11,8 +11,11 @@ import router from "./router/router.js"
 
 Vue.use(VueI18n)
 
+const lang = localStorage.getItem('lang')
+const initLang = lang || 'ru'
+
 const i18n = new VueI18n({
-  locale: 'ru',
+  locale: initLang,
   messages: {
     ru: ruMessages,
     en: enMessages,

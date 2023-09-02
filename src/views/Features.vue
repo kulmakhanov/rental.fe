@@ -16,7 +16,7 @@
                 class="subcard-text light white--text align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               >
-                <v-card-title v-text="$t(card.title)"></v-card-title>
+                <v-card-title v-text="$t(card.title)" class="pl-1"></v-card-title>
               </v-img>
             </v-card>
           </v-col>
@@ -27,11 +27,9 @@
 </template>
   
 <script>
-import CardFooter from '@/components/CardFooter.vue';
 
 export default {
   name: 'About',
-  components: { CardFooter },
   data: () => ({
     cards: [
       { title: 'the_best_choice_laptop', src: require("../../public/laptop_res1.webp"), flex: 12 },

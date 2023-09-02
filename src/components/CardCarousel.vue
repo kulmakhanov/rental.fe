@@ -5,7 +5,7 @@
     hide-delimiters
     show-arrows-on-hover
   >
-    <v-carousel-item v-for="(logosChunk, index) in chunkedLogos" :key="index">
+    <v-carousel-item v-for="(logosChunk, index) in chunkedLogos" :key="index" class="carousel-item">
       <div class="logo-container">
         <v-img 
           v-for="(logo, logoIndex) in logosChunk"
@@ -45,7 +45,7 @@ export default {
         },
         {
           title: 'KazakhAltyn',
-          src: require("../../public/company-logo/kazakhaltyn.png"),
+          src: require("../../public/company-logo/kazakhaltyn.jpg"),
         },
         {
           title: 'UNDP',
@@ -53,19 +53,19 @@ export default {
         },
         {
           title: 'Nestle',
-          src: require("../../public/company-logo/nestle.png"),
+          src: require("../../public/company-logo/nestle.jpg"),
         },
         {
           title: 'PepsiCo',
-          src: require("../../public/company-logo/pepsico.png"),
+          src: require("../../public/company-logo/pepsico.jpg"),
         },
         {
           title: 'Tikkurila',
-          src: require("../../public/company-logo/tikkurila.png"),
+          src: require("../../public/company-logo/tikkurila.jpg"),
         },
         {
           title: 'Bayern FC',
-          src: require("../../public/company-logo/nonon.png"),
+          src: require("../../public/company-logo/nonon.jpg"),
         },
         {
           title: 'Barcelona FC',
@@ -77,15 +77,11 @@ export default {
         },
         {
           title: 'EY',
-          src: require("../../public/company-logo/eyoung.png"),
+          src: require("../../public/company-logo/ey.jpg"),
         },
         {
           title: 'Efes ',
-          src: require("../../public/company-logo/efes.png"),
-        },
-        {
-          title: 'School ',
-          src: require("../../public/company-logo/school.png"),
+          src: require("../../public/company-logo/efes.jpg"),
         },
         {
           title: 'AAE ',
@@ -111,6 +107,10 @@ export default {
           title: 'Akimat',
           src: require("../../public/company-logo/akimat_almaty.jpg")
         },
+        {
+          title: 'PWC',
+          src: require("../../public/company-logo/pwc.png")
+        },
       ],
     }
   },
@@ -122,7 +122,7 @@ export default {
 
 <style scoped>
 .carousel-logo {
-  max-width: 84px;
+  max-width: 80px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -132,5 +132,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+.carousel-item {
+  transition: opacity 0.5s;
 }
 </style>

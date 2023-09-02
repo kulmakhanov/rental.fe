@@ -4,7 +4,7 @@ export default {
   choose_language: 'Тілді таңдаңыз',
   btnIcon: require('../../public/flags-locales/kz.png'),
   features: 'Артықшылықтар',
-  services: 'қызметтер',
+  services: 'Қызметтер',
   contacts: 'Контакттар',
   catalog: 'Каталог',
   rental_service: 'Ноутбук жалғау',
