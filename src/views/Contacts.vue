@@ -16,12 +16,12 @@
       <v-row>
         <v-col col="12" sm="6">
           <v-icon size="48px" class="contacts-icon" color="black" @click="toWhatsApp(phoneNumber)">mdi-phone</v-icon>
-          <p class="contact-subtext-phone">+7 (700) 086-51-51</p>
+          <p class="contact-subtext-phone">+7 (700) 088-88-19</p>
         
         </v-col>
         <v-col col="12" sm="6" class="px-0">
           <v-icon size="48px" class="contacts-icon" color="black" @click="toInsagram(instaLink)">mdi-instagram</v-icon>
-          <p class="contact-subtext-insta"> @bridges_event</p>
+          <p class="contact-subtext-insta"> @soundtech.kz</p>
         </v-col>
       </v-row>
       <v-row>
@@ -44,8 +44,8 @@ export default {
   data() {
     return {
       mapUrl: "https://yandex.kz/map-widget/v1/?ll=76.916743%2C43.233219&mode=whatshere&utm_source=main_stripe_big&whatshere%5Bpoint%5D=76.915446%2C43.236787&whatshere%5Bzoom%5D=17&z=15.89",
-      phoneNumber: "77000865151",
-      instaLink: "https://www.instagram.com/bridges_event/"
+      phoneNumber: "77000888819",
+      instaLink: "https://www.instagram.com/soundtech.kz/"
     }
   },
   methods: {

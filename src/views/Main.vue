@@ -5,7 +5,7 @@
         <h1 class="main-header">{{ $t('rental_service') }}<br>{{ $t('in_almaty') }}</h1>
       </div>
       <div class="main-subheader">
-        <h4>+7 (700) 086-51-51
+        <h4>+7 (700) 088-88-19
           <v-icon color="white" class="mb-1" @click="toWhatsApp(phoneNumber)">mdi-whatsapp</v-icon>
         </h4>
       </div>
@@ -21,7 +21,7 @@ export default {
   name: 'Main',
   data() {
     return {
-      phoneNumber: "77000865151"
+      phoneNumber: "77000888819"
     }
   },
   methods: {
