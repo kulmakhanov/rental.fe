@@ -30,4 +30,5 @@ export default {
   hdd: 'Хранение данных',
   videocard: 'Видеокарта',
   operation_system: 'ОС',
+  choose_theme: 'Выберите тему',
   }

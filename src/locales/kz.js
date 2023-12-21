@@ -30,4 +30,5 @@ export default {
   hdd: 'Деректерді сақтау',
   videocard: 'Бейне карта',
   operation_system: 'ОЖ',
+  choose_theme: 'Теманы танданыз',
 }

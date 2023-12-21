@@ -30,4 +30,5 @@ export default {
   hdd: 'Storage',
   videocard: 'Videocard',
   operation_system: 'OS',
+  choose_theme: 'Choose theme',
   }

@@ -32,6 +32,8 @@
         <v-list-item>
           <LocaleSetterSmall @toggle="toggle" />
         </v-list-item>
+        <v-divider />
+        <ThemeSwitch isMobile />
       </v-list>
       <Footer />
     </v-navigation-drawer>
@@ -71,12 +73,16 @@
 import Footer from '../components/Footer'
 import LocaleSetter from './LocaleSetter'
 import LocaleSetterSmall from './LocaleSetterSmall'
+import ThemeSwitch from './ThemeSwitch'
+// import WeatherService from '../services/WeatherService'
+
 export default {
   name: 'Navbar',
   components: { 
     Footer,
     LocaleSetter,
     LocaleSetterSmall,
+    ThemeSwitch,
   },
   data() {  
     return {
@@ -90,10 +96,23 @@ export default {
       ],
     }
   },
+  // mounted() {
+  //   this.fetchWeather()
+  // },
   methods: {
     toggle() {
       this.sidebar = !this.sidebar
     },
+    // async fetchWeather() {
+    //   try {
+    //     const res = await WeatherService.getWeather()
+    //     this.weather = res
+    //     console.log(this.weather)
+    //   }
+    //   catch(e) {
+    //     console.log("Error in weather API", e)
+    //   }
+    // },
   },
 }
 </script>

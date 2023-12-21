@@ -6,9 +6,14 @@
         color="transparent"
         class="pl-0"
         v-on="on"
-      > 
+      >
         <v-img class="flags" :src="$t('btnIcon')"/>
-        <p class="locale-text">{{ $t('choose_language') }}</p>
+        <p
+          class="locale-text"
+          :class="{ 'white--text': $vuetify.theme.dark, 'black--text': !$vuetify.theme.dark }"
+        >
+          {{ $t('choose_language') }}
+        </p>
         <v-icon color="grey" class="mt-1">mdi-chevron-down</v-icon>
       </v-btn>
     </template>

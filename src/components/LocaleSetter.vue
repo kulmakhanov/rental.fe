@@ -1,5 +1,9 @@
 <template>
-  <v-menu bottom offset-y>
+  <v-menu
+    bottom
+    offset-y
+    :close-on-content-click="false"
+  >
     <template #activator="{ on, attrs }">
       <v-btn
         icon
@@ -25,13 +29,19 @@
           <v-col cols="8" class="pa-0"><p class="mt-2">{{ locale.title }}</p></v-col>      
         </v-list-item-title>
       </v-list-item>
+      <v-divider />
+      <v-subheader>{{ $t('choose_theme') }}</v-subheader>
+      <ThemeSwitch />
     </v-list>
   </v-menu>
 </template>
 
 <script>
+import ThemeSwitch from './ThemeSwitch'
+
 export default {
   name: 'LocaleSetter',
+  components: { ThemeSwitch, },
   data() {
     return {
       locales: [
