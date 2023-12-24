@@ -25,7 +25,6 @@ export default {
   name: 'CardCarousel',
   computed: {
     chunkedLogos() {
-      console.log(this.items);
       const result = []
       for (let i = 0; i < this.items.length; i += this.itemsPerSlide) {
         result.push(this.items.slice(i, i + this.itemsPerSlide))
