@@ -5,22 +5,47 @@
       <v-divider />
       <v-row>
         <v-col col="12" sm="6">
-          <v-icon size="48px" class="contacts-icon" color="black">mdi-map-marker</v-icon>
+          <v-icon
+            size="48px"
+            class="contacts-icon"
+            :color="$vuetify.theme.dark ? 'white' : 'black'"
+          >
+            mdi-map-marker
+          </v-icon>
           <p class="contact-subtext-address">{{ $t('samal_address') }}</p>
         </v-col>
         <v-col col="12" sm="6" class="px-0">
-          <v-icon size="48px" class="contacts-icon" color="black">mdi-email-outline</v-icon>
+          <v-icon
+            size="48px"
+            class="contacts-icon"
+            :color="$vuetify.theme.dark ? 'white' : 'black'"
+          >
+            mdi-email-outline
+          </v-icon>
           <p class="contact-subtext-email">ht-kz@gmail.com</p>
         </v-col>
       </v-row>
       <v-row>
         <v-col col="12" sm="6">
-          <v-icon size="48px" class="contacts-icon" color="black" @click="toWhatsApp(phoneNumber)">mdi-phone</v-icon>
+          <v-icon
+            size="48px"
+            class="contacts-icon" 
+            :color="$vuetify.theme.dark ? 'white' : 'black'"
+            @click="toWhatsApp(phoneNumber)"
+          >
+            mdi-phone
+          </v-icon>
           <p class="contact-subtext-phone">+7 (700) 088-88-19</p>
-        
         </v-col>
         <v-col col="12" sm="6" class="px-0">
-          <v-icon size="48px" class="contacts-icon" color="black" @click="toInsagram(instaLink)">mdi-instagram</v-icon>
+          <v-icon
+            size="48px"
+            class="contacts-icon"
+            :color="$vuetify.theme.dark ? 'white' : 'black'"
+            @click="toInsagram(instaLink)"
+          >
+            mdi-instagram
+          </v-icon>
           <p class="contact-subtext-insta"> @soundtech.kz</p>
         </v-col>
       </v-row>

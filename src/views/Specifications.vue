@@ -5,7 +5,7 @@
       <v-row>
         <v-col cols="12" md="12" class="py-0">
           <v-carousel v-model="model" hide-delimiters>
-            <v-carousel-item v-for="laptop in laptops" :key="laptop.title">
+            <v-carousel-item v-for="laptop in items" :key="laptop.title">
               <v-card
                 class="laptop-card mx-auto"
                 max-width="400"
@@ -71,80 +71,14 @@
 </template>
 
 <script>
+import laptops from "../initial/laptops"
 export default {
   name: 'Specifications',
   data() {
     return {
       model: 0,
       show: false,
-      laptops: [
-        {
-          title: "Dell Ultrabook 12''",
-          src: require("../../public/dell_ultrabook.png"),
-          screen: "12.5”, 16:9, 1366 x 768",
-          cpu: "Intel Core i5-4200U",
-          ram: "4Gb",
-          hdd: "SSD 120Gb",
-          videocard: "Intel HD Graphics 4400",
-          ops: "Windows 8 Pro",
-          weight: "20x311x211мм, 1.34 кг",
-        },
-        {
-          title: "Dell Latitude 14''",
-          src: require("../../public/dell_latitude.png"),
-          screen: "14”, 16:9, 1600 x 900",
-          cpu: "Intel Core i5-4200M",
-          ram: "4Gb",
-          hdd: "SSD 120Gb",
-          videocard: "Intel HD Graphics 4600​",
-          ops: "Windows 8 Pro",
-          weight: "31x338x232мм, 2.1 кг",
-        },
-        {
-          title: "Lenovo ThinkPad 12''",
-          src: require("../../public/lenovo_think.png"),
-          screen: "12.5”, 16:9, 1366 x 768",
-          cpu: "Intel Core i5-4300U",
-          ram: "4Gb",
-          hdd: "SSD 120Gb",
-          videocard: "Intel HD Graphics 4400​",
-          ops: "Windows 8 Pro",
-          weight: "20x305x208мм, 1.36 кг",
-        },
-        {
-          title: "Lenovo ThinkPad 14''",
-          src: require("../../public/lenovo_thinkpad.png"),
-          screen: "14”, 16:9, 1600 x 900",
-          cpu: "Intel Core i5-5300U",
-          ram: "4Gb",
-          hdd: "SSD 120Gb",
-          videocard: "Intel HD Graphics 5500​",
-          ops: "Windows 8 Pro",
-          weight: "21x339x231мм, 1.8 кг",
-        },
-        {
-          title: "Lenovo P52 15''",
-          src: require("../../public/lenovo_P52.jpg"),
-          screen: "14.86'', 16:9, 1720 x 980",
-          cpu: "Intel Core i7-8850H",
-          ram: "16Gb",
-          hdd: "SSD 512Gb",
-          videocard: "NVIDIA Quadro P2000​",
-          ops: "Windows 10",
-          weight: "21x339x231мм, 1.8 кг",
-        },
-        {
-          title: "Dell Precision 7530 15''",
-          src: require("../../public/dell_precision.jpg"),
-          screen: "14.86”, 16:9, 1720 x 980",
-          cpu: "Intel Core i7-8570H",
-          ram: "16Gb",
-          hdd: "SSD 1Tb",
-          videocard: "NVIDIA Quadro P2000​",
-          ops: "Windows 10",
-          weight: "21x339x231мм, 1.8 кг",
-        },
-      ],
+      items: laptops.laptops,
     }
   }
 }

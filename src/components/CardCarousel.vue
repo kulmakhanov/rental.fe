@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import partners from "../partners/partners"
+import partners from "../initial/partners"
 export default {
   name: 'CardCarousel',
   computed: {
