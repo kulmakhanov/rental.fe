@@ -31,4 +31,10 @@ export default {
   videocard: 'Videocard',
   operation_system: 'OS',
   choose_theme: 'Choose theme',
+  route_main: 'Main',
+  route_features: "Features",
+  route_services: "Services",
+  route_contacts: "Contacts",
+  route_catalogue: "Catalogue",
+
   }

@@ -31,4 +31,9 @@ export default {
   videocard: 'Видеокарта',
   operation_system: 'ОС',
   choose_theme: 'Выберите тему',
+  route_main: 'Главная',
+  route_features: "Преимущества",
+  route_services: "Услуги",
+  route_contacts: "Контакты",
+  route_catalogue: "Каталог",
   }

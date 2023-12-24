@@ -31,4 +31,9 @@ export default {
   videocard: 'Бейне карта',
   operation_system: 'ОЖ',
   choose_theme: 'Теманы танданыз',
+  route_main: 'Басты',
+  route_features: "Артықшылықтар",
+  route_services: "Қызметтер",
+  route_contacts: "Контакттар",
+  route_catalogue: "Каталог",
 }
